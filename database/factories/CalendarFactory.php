@@ -17,9 +17,9 @@ class CalendarFactory extends Factory
     public function definition(): array
     {
         return [
-            //"event" => $this->faker()->??(),
-            //"pay_date"=> $this->faker->??(),
-            gcutoff_date" => $this->faker()->creditCardExpirationDateString(),
+            "event" => $this->faker()->paragraph(),
+            "pay_date"=> $this->faker->creditCardExpirationDateString(),
+            "cutoff_date" => $this->faker()->creditCardExpirationDateString(),
 
         ];
     }
