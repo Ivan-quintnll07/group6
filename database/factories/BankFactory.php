@@ -17,7 +17,9 @@ class BankFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "name" => $this->fake()->company(),
+            "address" => $this->faker()->address(),
+            "website" => $this->faker()->url(),
         ];
     }
 }

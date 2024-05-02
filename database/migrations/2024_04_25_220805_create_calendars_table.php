@@ -3,6 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\User;
+use App\Models\Card;
 
 return new class extends Migration
 {
@@ -13,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('calendars', function (Blueprint $table) {
             $table->id();
+            $table->foreignIdFor(User::class)->constrained();
+            $table->foreignIdFor(Card::class)->constrained();
+            $table->string("event");
+            $table->timestamp("pay_date");
+            $table->timestamp("cutoff_date");
             $table->timestamps();
         });
     }

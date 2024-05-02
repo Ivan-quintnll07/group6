@@ -17,7 +17,8 @@ class PromotionFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "description" => $this->faker()->paragraph(),
+            "discount_percentage" => $this->faker()->numberBetween(0,100),
         ];
     }
 }
