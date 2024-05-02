@@ -17,8 +17,8 @@ class CardTypeFactory extends Factory
     public function definition(): array
     {
         return [
-            "type" => $this->faker()->creditCardType(),
-            "description" => $this->faker()->paragraph(),
+            "type" => fake()->creditCardType(),
+            "description" => fake()->paragraph(),
         ];
     }
 }

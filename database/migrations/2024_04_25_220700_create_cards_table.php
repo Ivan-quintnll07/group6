@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignIdFor(User::class)->constrained();
             $table->foreignIdFor(CardType::class)->constrained();
             $table->foreignIdFor(Bank::class)->constrained();
-            $table->date("expiry_date");
+            $table->string("expiry_date");
             $table->timestamps();
         });
     }

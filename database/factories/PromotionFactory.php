@@ -18,7 +18,7 @@ class PromotionFactory extends Factory
     {
         return [
             "description" => $this->faker()->paragraph(),
-            "discount_percentage" => $this->faker()->numberBetween(0,100),
+            "discount_percentage" => $this->faker()->randomFloat(1,0,100),
         ];
     }
 }

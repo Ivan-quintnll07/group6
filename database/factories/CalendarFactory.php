@@ -18,9 +18,8 @@ class CalendarFactory extends Factory
     {
         return [
             "event" => $this->faker()->paragraph(),
-            "pay_date"=> $this->faker->creditCardExpirationDateString(),
-            "cutoff_date" => $this->faker()->creditCardExpirationDateString(),
-
+            "pay_date"=> $this->faker->date(),
+            "cutoff_date" => $this->faker()->date(),
         ];
     }
 }
