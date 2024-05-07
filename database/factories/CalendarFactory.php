@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Card;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -9,6 +10,11 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class CalendarFactory extends Factory
 {
+    public function cards()
+    {
+        return once(fn() => Card::pluck('id'));
+    }
+
     /**
      * Define the model's default state.
      *
@@ -17,9 +23,10 @@ class CalendarFactory extends Factory
     public function definition(): array
     {
         return [
-            "event" => $this->faker()->paragraph(),
-            "pay_date"=> $this->faker->date(),
-            "cutoff_date" => $this->faker()->date(),
+            "event" => fake()->paragraph(),
+            "pay_date"=> fake()->date(),
+            "cutoff_date" => fake()->date(),
+            "card_id" => $this->cards()->random(),
         ];
     }
 }

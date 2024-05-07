@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('calendars', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class)->constrained();
             $table->foreignIdFor(Card::class)->constrained();
             $table->string("event");
             $table->timestamp("pay_date");
