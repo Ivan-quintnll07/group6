@@ -14,7 +14,7 @@
 
     <div class="mt-3">
    <label for ="password" class="block text-base mb-2"> Password </label>
-   <input type="text" name="password" class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-stone-900" placeholder="Enter Password">
+   <input type="text" name="password" class="bg-primaryGreen border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-stone-900" placeholder="Enter Password">
    @error('password')
      <p> {{$message}} </p>
      @enderror
@@ -22,7 +22,7 @@
     </div>
 
     <div class="mt-5">
-    <button type="submit" class="border-2 border-red-950 bg-red-950 text-white py-1 w-full rounder-md hover:bg-transparent hover:text-indigo-700 font-semibold"> Log In </button>
+    <button type="submit" class="border-2 border-red-950 bg-primaryGreen text-white py-1 w-full rounder-md hover:bg-transparent hover:text-indigo-700 font-semibold"> Log In </button>
 
 
  </form>
