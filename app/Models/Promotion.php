@@ -8,7 +8,7 @@ use App\Models\CardType;
 
 
 
-class CardType extends Model
+class Promotion extends Model
 {
     use HasFactory;
     public function CardType() {
