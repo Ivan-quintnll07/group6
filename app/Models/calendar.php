@@ -18,11 +18,10 @@ class Calendar extends Model
     }
 }
 
-
 {
     public function Card(){
 
         return $this->belongsTo(User::class);
     }
-}
+}           
 
