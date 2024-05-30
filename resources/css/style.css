@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700; 800&display=swap');
+
+*{
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;}
+body {
+font-family: 'Poppins', sans-serif;}
+.container {
+max-width: 1200px;
+margin: 0 auto;}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url('https://www.visa.com.sv/dam/VCOM/regional/lac/SPA/Default/Pymes/Notasyrecursos/beneficios-tarjeta-credito-800x450.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        color: #ffdfcf;
+        font-size: 25px;
+        font-weight: 800;
+
+    }
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li {
+   font-size: 18px;
+   padding: 20px;
+   color: #ffdfcf;
+   display: block;
+   font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #CE967B;
+}
+
+#menu{
+    display: none;
+
+}
+
+.menu-icono
+{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
