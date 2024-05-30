@@ -16,12 +16,11 @@ class Calendar extends Model
         return $this->belongsTo(Card::class);
 
     }
-}
 
-{
-    public function Card(){
+    public function User(){
 
         return $this->belongsTo(User::class);
     }
-}           
+}
+
 
