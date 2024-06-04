@@ -19,26 +19,19 @@ class UserController extends Controller
        }
 
        return back()->withErrors([]);
-
-
     }
 
     public function register(Request $request) {
         $registerCredentials = $request->validate([
             'email'=>'required|email|unique:users,email',
             'name'=>'required|min:3',
-            'password'=> 'required|min:8|password',
+            'password'=> 'required|min:8',
         ]);
 
         if(User::create($registerCredentials)){
             return redirect('/');
         }
 
-        return back()-> withErrors([]);
-
+        return back()->withErrors([]);
    }
 }
-
-
-
-
