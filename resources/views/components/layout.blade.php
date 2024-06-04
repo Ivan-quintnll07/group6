@@ -7,6 +7,7 @@
     @vite('resources/css/app.css')
     <title>Document</title>
 </head>
+<body>
     {{ $slot }}
 </body>
 </html>
