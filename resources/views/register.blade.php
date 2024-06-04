@@ -7,8 +7,6 @@
             <form class="bg-gray shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <div class="mb-4">
 
-                    <x-input type="text" title="User" name="string"></x-input>
-
 
                     <label class="block text-gray-900 text-sm font-bold mb-2" for="username">
                         Usuario
