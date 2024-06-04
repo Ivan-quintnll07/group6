@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Card;
 
 class CardController extends Controller
 {
@@ -10,7 +11,14 @@ class CardController extends Controller
       $cardData = $request->validate([
         "expiry_date"=>'required|date',
         "cut_off_date"=>'required|date',
+        "bank_id"=>'required|exists:banks,id'
       ]);
+
+      if(Card::create($cardData)) {
+        return redirect('');
+      }
+
+      return back()->withErrors([]);
     }
 
     public function read(Request $request){
