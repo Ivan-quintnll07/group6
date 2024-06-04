@@ -28,7 +28,10 @@ class UserController extends Controller
             'password'=> 'required|min:8',
         ]);
 
-        if(User::create($registerCredentials)){
+        $user = User::create($registerCredentials);
+
+        if($user){
+            Auth::login($user);
             $request->session()->regenerate();
             return redirect('/home');
         }
