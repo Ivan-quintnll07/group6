@@ -13,3 +13,7 @@ Route::get('/home', function () {
     ]);
 });
 
+Route::get('/offer', function (){
+    return view('offers.offer');
+});
+
