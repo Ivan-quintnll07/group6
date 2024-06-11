@@ -4,34 +4,44 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Card;
+use Illuminate\Support\Facade\Auth;
 
 class CardController extends Controller
 {
-    public function create(Request $request) {
-        dd($request);
-      $cardData = $request->validate([
-        'expiry_date'=>'required|date',
-        'cut_off_date'=>'required|date',
-        'bank_id'=>'required|exists:banks,id',
-      ]);
+    public function create(Request $request)
+    {
+        $request->merge([
+            'user_id' => Auth::user()->id
+        ]);
 
+        $cardData = $request->validate([
+            'expiry_date' => 'required|date',
+            'cut_off_date' => 'required|date',
+            'bank_id' => 'required|exists:banks,id',
+            'user_id' => 'required'
+        ]);
 
-      if(Card::create($cardData)){
-        return redirect('/');
-      }
+        dd($cardData);
 
-      return back()->withErrors([]);
+        if (Card::create($cardData)) {
+            return redirect('/');
+        }
+
+        return back()->withErrors([]);
     }
 
-    public function read(Request $request){
+    public function read(Request $request)
+    {
 
     }
 
-    public function update(Request $request){
+    public function update(Request $request)
+    {
 
     }
 
-    public function delete(Request $request){
+    public function delete(Request $request)
+    {
 
     }
 }
