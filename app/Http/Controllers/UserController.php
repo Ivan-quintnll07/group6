@@ -15,6 +15,7 @@ class UserController extends Controller
         ]);
 
        if(Auth::attempt($loginCredentials)) {
+            $request->session()->regenerate();
             return redirect('/home');
        }
 

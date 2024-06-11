@@ -1,4 +1,4 @@
-<x-layout>
+ <x-layout>
     <div class="flex justify-center items-center h-screen bg-teal-900">
         <div class="w-96 p-6 shadow-lg bg-yellow-800 rounded-md">
             <h1 class="text-6 x1 block text-center font-bold"> <i class="fa-regular fa-user"></i> LOGIN HERE </h1>
