@@ -10,10 +10,6 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/offer', function () {
-    return view('offer');
-});
-
 Route::get('/aboutUs', function () {
     return view('aboutUs');
 });
