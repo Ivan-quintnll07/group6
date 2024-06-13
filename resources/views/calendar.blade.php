@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario de Tareas</title>
     <style>
-
+       
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -39,7 +39,6 @@
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <!-- Calendar Section -->

@@ -1,5 +1,7 @@
+<div class="px-20 justify-center">
 <button
-    class="bg-blue-500 hover:bg-gray-700 text-gray font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+    class="bg-blue-500 hover:bg-gray-700 text-gray font-bold rounded-full focus:outline-none focus:shadow-outline"
     type="submit">
     ENVIAR
 </button>
+</div>

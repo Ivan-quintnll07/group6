@@ -22,3 +22,8 @@ Route::get('/financialEducation', function () {
     return view('financialEducation');
 });
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+
