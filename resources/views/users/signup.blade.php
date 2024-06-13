@@ -1,4 +1,5 @@
 <x-layout>
+    <div class="flex flex-col h-screen bg-cover bg-center" style="background-image: url('https://img.freepik.com/fotos-premium/pared-blanca-hoja-palma-sombra-palmera_902049-16530.jpg');">
     <div class="flex justify-center items-center h-screen">
         <div class="backdrop-blur-sm bg-white/30 rounded-md">
             <h1 class="text-6   x1 block text-center font-bold"> <i class="fa-regular fa-user"></i>Registrate</h1>
