@@ -35,9 +35,9 @@
             </span>
             <nav class="mt-8">
                 <a href="aboutUs" class="block text-gray-600 hover:text-gray-900 mb-4">Sobre nosotros</a>
-                <a href="register" class="block text-gray-600 hover:text-gray-900 mb-4">Registrarse</a>
+                <a href="singup" class="block text-gray-600 hover:text-gray-900 mb-4">Registrarse</a>
                 <a href="login" class="block text-gray-600 hover:text-gray-900">Iniciar Sesión</a>
-                
+
                 <a href="homepage" class="block text-gray-600 hover:text-gray-900">Pagina Principal</a>
             </nav>
         </div>
