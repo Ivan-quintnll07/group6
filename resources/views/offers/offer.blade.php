@@ -11,8 +11,8 @@
     </div>
 
     <div class="grid grid-cols-4 my-7">
-        <h1 class="col-span-1">Restaurantes</h1>
-        <x-card-offer></x-card-offer>
+        <h1 class="col-span-1 flex items-center justify-center">Restaurantes</h1>
+        <x-card-offer> </x-card-offer>
     </div>
 
 </x-layout>
