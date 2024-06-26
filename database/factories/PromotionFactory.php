@@ -31,10 +31,10 @@ class PromotionFactory extends Factory
     public function definition(): array
     {
         return [
-            "description" => fake()->paragraph(),
-            "discount_percentage" => fake()->randomFloat(1,0,100),
-            "bank_id" => $this->banks()->random(),
-            "card_type_id" => $this->cardTypes()->random(),
+            //"description" => fake()->paragraph(),
+            //"discount_percentage" => fake()->randomFloat(1,0,100),
+            //"bank_id" => $this->banks()->random(),
+            //"card_type_id" => $this->cardTypes()->random(),
         ];
     }
 }

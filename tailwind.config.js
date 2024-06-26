@@ -9,8 +9,12 @@ export default {
       extend: {
         colors: {
             'primaryGreen': '#B9D897',
-        }
+
       },
+      fontFamily:{
+
+      }
     },
     plugins: [],
-  }
+}
+}
