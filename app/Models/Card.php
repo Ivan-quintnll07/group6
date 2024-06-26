@@ -9,6 +9,11 @@ use App\Models\CardType;
 class Card extends Model
 {
     use HasFactory;
+
+    protected $guarded = [
+        'id'
+    ];
+
     public function CardType(){
         return $this->belongsTo(CardType::class);
     }

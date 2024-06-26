@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Card;
-use Illuminate\Support\Facade\Auth;
+use Illuminate\Support\Facades\Auth;
 
 class CardController extends Controller
 {
@@ -18,11 +18,10 @@ class CardController extends Controller
             'expiry_date' => 'required|date',
             'cut_off_date' => 'required|date',
             'bank_id' => 'required|exists:banks,id',
-            'user_id' => 'required'
+            'card_type_id' => 'required|exists:card_types,id',
+            'user_id' => 'required|exists:users,id'
         ]);
-
-        dd($cardData);
-
+        
         if (Card::create($cardData)) {
             return redirect('/');
         }
