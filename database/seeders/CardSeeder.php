@@ -13,6 +13,6 @@ class CardSeeder extends Seeder
      */
     public function run(): void
     {
-        Card::factory()->create();
+        Card::factory(10)->create();
     }
 }

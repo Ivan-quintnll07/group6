@@ -13,6 +13,6 @@ class CalendarSeeder extends Seeder
      */
     public function run(): void
     {
-        Calendar::factory()->create();
+        Calendar::factory(10)->create();
     }
 }
