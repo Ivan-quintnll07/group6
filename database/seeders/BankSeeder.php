@@ -39,6 +39,11 @@ class BankSeeder extends Seeder
                 'address' => "Centro Comercial 'La Skina', 16 Avenida Nte., Santa Tecla",
                 'website' => "https://www.promerica.com.sv/"
              ],
+             [
+                'name' => "Banco Fedecrédito",
+                'address' => "Edificio Macario Rosales, Edificio Macario Armando Rosales Rosa 25 Av. Norte y, 23 Calle Poniente 25, San Salvador",
+                'website' => "https://www.fedecredito.com.sv/"
+             ],
              ];
 
 
