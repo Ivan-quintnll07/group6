@@ -16,9 +16,11 @@ return new class extends Migration
         Schema::create('promotions', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Bank::class)->constrained();
-            $table->foreignIdFor(CardType::class)->constrained();
-            $table->text("description");
-            $table->float("discount_percentage");
+            $table->string('business');
+            $table->text("title");
+            $table->string("benefit");
+            $table->string("restriction");
+            $table->string("category");
             $table->timestamps();
         });
     }

@@ -26,4 +26,9 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+Route::get('/education', function () {
+    return view('education');
+});
+
+
 

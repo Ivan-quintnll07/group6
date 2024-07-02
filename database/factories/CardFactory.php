@@ -37,7 +37,8 @@ class CardFactory extends Factory
             "expiry_date"=> fake()->creditCardExpirationDateString(),
             "user_id" => $this->users()->random(),
             "card_type_id" => $this->cardTypes()->random(),
-            "Bank_id" => $this->banks()->random(),
+            "bank_id" => $this->banks()->random(),
+            "cut_off_date" => fake()->date(),
         ];
     }
 }
