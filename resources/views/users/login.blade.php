@@ -20,16 +20,13 @@
                         key
                     </span>
                     <x-input name="password" type="password">Contraseña</x-input>
-<<<<<<< Updated upstream
 
-=======
                     </div>
-                    
+
                     <label class="flex items-center mt-2">
                         <input type="checkbox" class="form-checkbox">
                         <span class="ml-2 text-gray-600">Recuérdame</span>
                     </label>
->>>>>>> Stashed changes
                     <x-primary-button>Crear cuenta</x-primary-button>
                 </form>
                 <div class="flex justify-center mt-4">

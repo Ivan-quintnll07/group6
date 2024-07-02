@@ -17,18 +17,18 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-indigo-900 p-4 shadow-md flex justify-between items-center">
+    <header class="bg-sky-900 p-4 shadow-md flex justify-between items-center">
         <span class="material-symbols-outlined cursor-pointer" id="menuButton">
             menu
         </span>
         <nav class="space-x-4">
-            <a href="aboutUs" class="text-gray-600 hover:text-gray-100">Sobre nosotros</a>
-            <a href="register" class="text-gray-600 hover:text-gray-100">Registrarse</a>
-            <a href="login" class="text-gray-600 hover:text-gray-100">Iniciar Sesión</a>
+            <a href="aboutUs" class="text-zinc-50	 hover:text-gray-100">Sobre nosotros</a>
+            <a href="register" class="text-zinc-50	 hover:text-gray-100">Registrarse</a>
+            <a href="login" class="text-zinc-50	 hover:text-gray-100">Iniciar Sesión</a>
         </nav>
     </header>
 
-    <aside class="fixed inset-y-0 left-0 w-64 bg-blue-900 shadow-md sidebar sidebar-closed" id="sidebar">
+    <aside class="fixed inset-y-0 left-0 w-64 bg-sky-900 shadow-md sidebar sidebar-closed" id="sidebar">
         <div class="p-4">
             <span class="material-symbols-outlined cursor-pointer" id="closeButton">
                 close
