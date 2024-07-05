@@ -136,6 +136,24 @@ class PromotionSeeder extends Seeder
                     Los cambios en las condiciones durante la vigencia de la promoción son responsabilidad del comercio. ',
                 'category' => 'Salud'
             ],
+            [
+                'bank_id' => Bank::where('name', 'Banco Cuscatlán')->first()->id,
+                'title' => "30% de descuento* en el combo AMIGOS ",
+                'benefit' => 'Precio Débito CUSCATLAN $8.86 | Precio normal: $12.65
+                              Incluye: 2 bebidas grandes + 1canasta de palomitas JUMBO ',
+                'restriction' => '*Válido al pagar con Tarjetas de Débito CUSCATLAN. Aplica solo en combo AMIGOS de CINEPOLIS El Salvador, con 2 bebidas grandes y 1 canasta de palomitas JUMBO. Combo aplica únicamente en palomitas saladas. No aplica en conjunto con otras promociones o descuentos. No participan en la promoción compras realizadas con Tarjeta de Débito Empresariales de Banco CUSCATLAN. El otorgamiento del descuento es exclusiva responsabilidad de Cinépolis.
+                Promoción válida 1 de abril al 31 de julio del 2024. hasta agotar existencias ',
+                'category' => 'Otros'
+
+            ],
+            [
+                'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
+                'title' => "30% de descuento en lentes Transition en ópticas Devlyn",
+                'benefit' => '30% de descuento aplica para lente graduado desde -3.00 a +3.00 con cilindro hasta -2.00 descuento aplica en la compra de Aro de Diseñador con un costo mayor a $100.00. ',
+                'restriction' => 'No aplica compras en línea, ni con otras promociones o descuentos vigentes.
+                    Los cambios en las condiciones durante la vigencia de la promoción son responsabilidad del comercio. ',
+                'category' => 'Salud'
+            ],
 
 
         ];
