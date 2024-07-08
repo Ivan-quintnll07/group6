@@ -38,7 +38,7 @@
                 <a href="aboutUs" class="block text-gray-600 hover:text-gray-900 mb-4">Sobre nosotros</a>
                 <a href="register" class="block text-gray-600 hover:text-gray-900 mb-4">Registrarse</a>
                 <a href="login" class="block text-gray-600 hover:text-gray-900 mb-4">Iniciar Sesión</a>
-                <a href="homepage" class="block text-gray-600 hover:text-gray-900">Pagina Principal</a>
+                <a href="welcome" class="block text-gray-600 hover:text-gray-900">Pagina Principal</a>
             </nav>
         </div>
     </aside>

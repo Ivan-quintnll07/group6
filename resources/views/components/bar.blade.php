@@ -28,7 +28,7 @@
                 <a href="signup" class="block text-gray-100 hover:text-gray-900 mb-4">XDXXDXD</a>
                 @endauth
 
-                <a href="homepage" class="block text-gray-100 hover:text-gray-900">Pagina Principal</a>
+                <a href="welcome" class="block text-gray-100 hover:text-gray-900">Pagina Principal</a>
             </nav>
 
         </div>
