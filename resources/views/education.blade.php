@@ -1,7 +1,6 @@
 <x-layout>
 
-    <h1 style="color: white; font-family: 'Kodchasan', sans-serif; text-align: center; background-color: #384E77; padding: 10px; box-shadow: 5px 5px 10px gray;font-size: 35px">Educación Financiera</h1>
-    <div class="bg-[#eee] text-black p-10">
+   <x-bar></x-bar>
 
         <div class="flex items-center justify-center min-h-screen container mx-auto">
 
