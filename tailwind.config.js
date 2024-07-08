@@ -1,20 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-      "./resources/**/*.blade.php",
-      "./resources/**/*.js",
-      "./resources/**/*.vue",
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
     ],
     theme: {
-      extend: {
-        colors: {
-            'primaryGreen': '#B9D897',
+        extend: {
+            colors: {
+                click: {
+                    'primaryBlue': '#18314F',
+                    'blue': '',
+                }
+            },
+            fontFamily: {
 
-      },
-      fontFamily:{
-
-      }
-    },
-    plugins: [],
-}
+            }
+        },
+        plugins: [],
+    }
 }
