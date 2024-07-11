@@ -146,14 +146,7 @@ class PromotionSeeder extends Seeder
                 'category' => 'Otros'
 
             ],
-            [
-                'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
-                'title' => "30% de descuento en lentes Transition en ópticas Devlyn",
-                'benefit' => '30% de descuento aplica para lente graduado desde -3.00 a +3.00 con cilindro hasta -2.00 descuento aplica en la compra de Aro de Diseñador con un costo mayor a $100.00. ',
-                'restriction' => 'No aplica compras en línea, ni con otras promociones o descuentos vigentes.
-                    Los cambios en las condiciones durante la vigencia de la promoción son responsabilidad del comercio. ',
-                'category' => 'Salud'
-            ],
+            
 
 
         ];

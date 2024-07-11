@@ -2,25 +2,7 @@
     <div class="flex flex-col h-screen bg-cover bg-center"
         style="background-image: url('https://www.rrd.com/uploads/thoughts/items/independent-health-upgrades-to-digital-payment-and-distribution-system-healthcare_20230228_pageimage.jpg');">
 
-        <!-- Barra gris :D -->
-        <header class="bg-gray-200 p-4 flex justify-between items-center shadow-md">
-            <span class="material-icons-outlined cursor-pointer" id="menuButton">menu</span>
-            <span class="material-icons-outlined">account_circle</span>
-        </header>
-
-        <!-- Sidebar  :< -->
-        <aside id="sidebar"
-            class="fixed inset-y-0 left-0 w-64 bg-white shadow-md transform -translate-x-full transition-transform duration-300 ease-in-out">
-            <div class="p-4">
-                <span class="material-icons-outlined cursor-pointer" id="closeButton">close</span>
-                <nav class="mt-8">
-                    <a href="aboutUs" class="block text-gray-600 hover:text-gray-900 mb-4">Sobre nosotros</a>
-                    <a href="register" class="block text-gray-600 hover:text-gray-900 mb-4">Registrarse</a>
-                    <a href="login" class="block text-gray-600 hover:text-gray-900 mb-4">Iniciar Sesión</a>
-                    <a href="homepage" class="block text-gray-600 hover:text-gray-900">Pagina Principal</a>
-                </nav>
-            </div>
-        </aside>
+        <x-bar></x-bar>
 
 
         <div class="flex-grow flex items-center justify-center">
@@ -70,15 +52,7 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById('menuButton').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.toggle('-translate-x-full');
-        });
 
-        document.getElementById('closeButton').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.add('-translate-x-full');
-        });
-    </script>
 </x-layout>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
