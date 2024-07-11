@@ -1,0 +1,35 @@
+<body class="bg-gray-100">
+    <header class="bg-click-primaryBlue p-4 shadow-md flex justify-between items-center">
+        <span class="material-symbols-outlined cursor-pointer" id="menuButton">
+            menu
+        </span>
+        <nav class="space-x-4">
+            <a href="aboutUs" class="text-zinc-50	 hover:text-gray-100">Sobre nosotros</a>
+            <a href="signup" class="text-zinc-50	 hover:text-gray-100">Registrarse</a>
+            <a href="login" class="text-zinc-50	 hover:text-gray-100">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+    <aside class="fixed inset-y-0 left-0 w-64 bg-sky-900 shadow-md sidebar sidebar-closed" id="sidebar">
+        <div class="p-4">
+            <span class="material-symbols-outlined cursor-pointer" id="closeButton">
+                close
+            </span>
+            <nav class="mt-8">
+
+                <a href="aboutUs" class="block text-gray-100 hover:text-gray-900 mb-4">Sobre nosotros</a>
+
+                @guest
+                <a href="signup" class="block text-gray-100 hover:text-gray-900 mb-4">Registrarse</a>
+                <a href="login" class="block text-gray-100 hover:text-gray-900">Iniciar Sesión</a>
+                @endguest
+
+                @auth
+                <a href="signup" class="block text-gray-100 hover:text-gray-900 mb-4">XDXXDXD</a>
+                @endauth
+
+                <a href="welcome" class="block text-gray-100 hover:text-gray-900">Pagina Principal</a>
+            </nav>
+
+        </div>
+    </aside>
