@@ -30,11 +30,19 @@
         <div class=" flex justify-center mt-20 h-screen ">
             <div class="flex space-x-20">
 
-                <div class="text-white text-justify font-sans w-96 h-96 bg-click-primaryBlue flex items-center justify-center text-sm"><a class="font-bold text-xl flex-initial">Misión</a><p>Una plataforma reconocida por su fiabilidad, en la cual los usuarios recurren para poder tener una experiencia única en ahorro. Localmente conocida, donde las personas tengan un fácil acceso a las promociones que ofrecen las tarjetas de crédito.</p></div>
-                <div class=" text-white text-justify font-mono w-96 h-96 bg-click-primaryBlue flex items-center justify-center text-S">Brindarle la mejor experiencia de uso a los consumidores a través de la innovación del conocimiento en cuanto a información y beneficios de una tarjeta de crédito mediante el sitio web que brindaremos, ofreciéndoles información fidedigna. </div>
 
+                <div class="shadow-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-150 text-white text-justify font-sans w-96 h-96 bg-click-primaryBlue flex flex-col items-center justify-center text-sm rounded-lg"><a class="font-bold text-xl flex-initial mb-4">Misión</a><p class="text-center">Una plataforma reconocida por su fiabilidad, en la cual los usuarios recurren para poder tener una experiencia única en ahorro. Localmente conocida, donde las personas tengan un fácil acceso a las promociones que ofrecen las tarjetas de crédito.</p></div>
+                <div class="shadow-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700 text-white text-justify font-sans w-96 h-96 bg-click-primaryBlue flex flex-col items-center justify-center text-sm rounded-lg"><a class="font-bold text-xl flex-initial mb-4">Visión</a><p class="text-center">Brindarle la mejor experiencia de uso a los consumidores a través de la innovación del conocimiento en cuanto a información y beneficios de una tarjeta de crédito mediante el sitio web que brindaremos, ofreciéndoles información fidedigna.</p></div>
             </div>
-
         </div>
+
+        <div class=" flex justify-center h-screen">
+            <div class="">
+                <div class="shadow-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700 mx-20 text-white text-justify font-sans w-83 h-60 bg-click-primaryBlue flex flex-col items-center justify-center text-sm rounded-lg"><a class="font-bold text-xl flex-initial mb-4">Visión</a><p class="text-center">Brindarle la mejor experiencia de uso a los consumidores a través de la innovación del conocimiento en cuanto a información y beneficios de una tarjeta de crédito mediante el sitio web que brindaremos, ofreciéndoles información fidedigna.</p></div>
+            </div>
+        </div>
+
+
+
     </div>
 </x-layout>
