@@ -5,7 +5,7 @@
         </span>
         <nav class="space-x-4">
             <a href="aboutUs" class="text-zinc-50	 hover:text-gray-100">Sobre nosotros</a>
-            <a href="register" class="text-zinc-50	 hover:text-gray-100">Registrarse</a>
+            <a href="signup" class="text-zinc-50	 hover:text-gray-100">Registrarse</a>
             <a href="login" class="text-zinc-50	 hover:text-gray-100">Iniciar Sesión</a>
         </nav>
     </header>
