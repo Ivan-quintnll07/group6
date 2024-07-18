@@ -18,10 +18,10 @@ return new class extends Migration
             $table->foreignIdFor(Bank::class)->constrained();
             $table->string('business');
             $table->text("title");
-            $table->string("benefit");
+            $table->string("benefit", 500);
             $table->string("img");
             $table->string("img_business");
-            $table->string("restriction");
+            $table->string("restriction", 600)->nullable();
             $table->string("category");
             $table->timestamps();
         });

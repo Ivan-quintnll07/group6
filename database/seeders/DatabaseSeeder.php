@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
             CardTypeSeeder::class,
             UserSeeder::class,
             CardSeeder::class,
-            CalendarSeeder::class,
+           // CalendarSeeder::class,
             PromotionSeeder::class,
         ]);
     }

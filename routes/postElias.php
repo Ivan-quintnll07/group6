@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Promotion;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,8 @@ Route::get('/home', function () {
 });
 
 Route::get('/offer', function (){
-    return view('offers.offer');
+    return view('offers.offer', [
+        'offers' => Promotion::all()
+    ]);
 });
 
