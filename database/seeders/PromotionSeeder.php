@@ -19,6 +19,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'McDonalds',
+                'img' => 'mcnifica-res.png',
+                'img_business' => '',
                 'title' => "McNífica™ de Res",
                 'benefit' => 'Una McNífica de Res con papas grandes',
                 'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
@@ -51,14 +53,6 @@ class PromotionSeeder extends Seeder
             ],
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
-                'business' => 'KFC',
-                'title' => "15 rollos de sushi de salmón  ",
-                'benefit' => '15 rollos de sushi de salmón con tu soda favorita ',
-                'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
-                'category' => "Restaurante"
-            ],
-            [
-                'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'La tecleña',
                 'title' => "Pack tecleño tradicional a un super precio",
                 'benefit' => 'Llevate tu pack tecleño tradicional a un super precio ',
@@ -67,6 +61,7 @@ class PromotionSeeder extends Seeder
             ],
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
+                'business' => 'Viaje',
                 'title' => "Copa América: Costa Rica vs Colombia en Phoenix",
                 'benefit' => '- Tiquete aéreo San José - Phoenix - San José vía United Airlines
                 - 3 noches de alojamiento con desayunos en el Hampton Inn & Suite Phoenix Glendale
@@ -78,17 +73,48 @@ class PromotionSeeder extends Seeder
             ],
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
-                'title' => "Copa América: Costa Rica vs Paraguay",
-                'benefit' => '- Tiquete aéreo San José - Austin - San José vía Copa Airlines
-                - 3 noches de alojamiento con desayunos en el Towne Place Suites by Marriott Austin
-                - Traslados aeropuerto - hotel - aeropuerto
-                - Entrada al estadio para el partido
-                - Traslado hotel - estadio - hotel ',
+                'business' => 'Viaje',
+                'title' => "Ciudad de México",
+                'benefit' => '- Traslados aeropuerto - hotel- aeropuerto
+                    - 4 noches de alojamiento con desayuno en habitación doble en el Hotel Regente
+                    - Traslados hotel - autódromo - hotel los 3 días del evento ',
                 'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
                 'category' => "Viajes"
             ],
             [
-                'bank_id' => Bank::where('name', 'Banco Fedecrédrito')->first()->id,
+                'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
+                'business' => 'Óptica Devlyn',
+                'title' => "30% de descuento en lentes Transition en ópticas Devlyn",
+                'benefit' => '30% de descuento aplica para lente graduado desde -3.00 a +3.00 con cilindro hasta -2.00 descuento aplica en la compra de Aro de Diseñador con un costo mayor a $100.00. ',
+                'restriction' => 'No aplica compras en línea, ni con otras promociones o descuentos vigentes.
+                    Los cambios en las condiciones durante la vigencia de la promoción son responsabilidad del comercio. ',
+                'category' => 'Salud'
+            ],
+            [
+                'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
+                'business' => 'Salud',
+                'title' => "Descuentos en Laboratorios identificados por la red SALUD A TU ALCANCE ",
+                'benefit' => '-Plan A: Para ti, tu cónyuge e hijos solteros menores de 24 años
+               - Plan B: Si eres soltero, para ti y tus padres
+                -Plan C: Si eres madre soltera, para ti, tus hijos (máximo 2) y tus padres
+                -Asesoría Médica telefónica en horarios inhábiles y días festivos
+                -Descuentos con médicos de otras especialidades de la red de SALUD A TU ALCANCE ',
+                'category' => 'Salud'
+            ],
+
+            [
+                'bank_id' => Bank::where('name', 'Banco Cuscatlán')->first()->id,
+                'business' => 'Cinepolis',
+                'title' => "30% de descuento* en el combo AMIGOS ",
+                'benefit' => 'Precio Débito CUSCATLAN $8.86 | Precio normal: $12.65
+                              Incluye: 2 bebidas grandes + 1canasta de palomitas JUMBO ',
+                'restriction' => '*Válido al pagar con Tarjetas de Débito CUSCATLAN. Aplica solo en combo AMIGOS de CINEPOLIS El Salvador, con 2 bebidas grandes y 1 canasta de palomitas JUMBO. Combo aplica únicamente en palomitas saladas. No aplica en conjunto con otras promociones o descuentos. No participan en la promoción compras realizadas con Tarjeta de Débito Empresariales de Banco CUSCATLAN. El otorgamiento del descuento es exclusiva responsabilidad de Cinépolis.
+                Promoción válida 1 de abril al 31 de julio del 2024. hasta agotar existencias ',
+                'category' => 'Otros'
+            ],
+            [
+                'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
+                'business' => 'Viaje',
                 'title' => "Viaje Internacional, Europa",
                 'benefit' => '
                 Incluye:
@@ -101,56 +127,9 @@ class PromotionSeeder extends Seeder
                 'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
                 'category' => "Viajes"
             ],
-            [
-                'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
-                'title' => "Ciudad de México",
-                'benefit' => '- Traslados aeropuerto - hotel- aeropuerto
-                    - 4 noches de alojamiento con desayuno en habitación doble en el Hotel Regente
-                    - Traslados hotel - autódromo - hotel los 3 días del evento ',
-                'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
-                'category' => "Viajes"
-            ],
-            [
-                'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
-                'title' => "30% de descuento en lentes Transition en ópticas Devlyn",
-                'benefit' => '30% de descuento aplica para lente graduado desde -3.00 a +3.00 con cilindro hasta -2.00 descuento aplica en la compra de Aro de Diseñador con un costo mayor a $100.00. ',
-                'restriction' => 'No aplica compras en línea, ni con otras promociones o descuentos vigentes.
-                    Los cambios en las condiciones durante la vigencia de la promoción son responsabilidad del comercio. ',
-                'category' => 'Salud'
-            ],
-            [
-                'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
-                'title' => "Descuentos en Laboratorios identificados por la red SALUD A TU ALCANCE ",
-                'benefit' => '-Plan A: Para ti, tu cónyuge e hijos solteros menores de 24 años
-               - Plan B: Si eres soltero, para ti y tus padres
-                -Plan C: Si eres madre soltera, para ti, tus hijos (máximo 2) y tus padres
-                -Asesoría Médica telefónica en horarios inhábiles y días festivos
-                -Descuentos con médicos de otras especialidades de la red de SALUD A TU ALCANCE ',
-                'category' => 'Salud'
-            ],
-            [
-                'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
-                'title' => "30% de descuento en lentes Transition en ópticas Devlyn",
-                'benefit' => '30% de descuento aplica para lente graduado desde -3.00 a +3.00 con cilindro hasta -2.00 descuento aplica en la compra de Aro de Diseñador con un costo mayor a $100.00. ',
-                'restriction' => 'No aplica compras en línea, ni con otras promociones o descuentos vigentes.
-                    Los cambios en las condiciones durante la vigencia de la promoción son responsabilidad del comercio. ',
-                'category' => 'Salud'
-            ],
-            [
-                'bank_id' => Bank::where('name', 'Banco Cuscatlán')->first()->id,
-                'title' => "30% de descuento* en el combo AMIGOS ",
-                'benefit' => 'Precio Débito CUSCATLAN $8.86 | Precio normal: $12.65
-                              Incluye: 2 bebidas grandes + 1canasta de palomitas JUMBO ',
-                'restriction' => '*Válido al pagar con Tarjetas de Débito CUSCATLAN. Aplica solo en combo AMIGOS de CINEPOLIS El Salvador, con 2 bebidas grandes y 1 canasta de palomitas JUMBO. Combo aplica únicamente en palomitas saladas. No aplica en conjunto con otras promociones o descuentos. No participan en la promoción compras realizadas con Tarjeta de Débito Empresariales de Banco CUSCATLAN. El otorgamiento del descuento es exclusiva responsabilidad de Cinépolis.
-                Promoción válida 1 de abril al 31 de julio del 2024. hasta agotar existencias ',
-                'category' => 'Otros'
-
-            ],
-            
-
-
         ];
 
         Promotion::factory(count($promotions))->sequence(fn($sqn) => $promotions[$sqn->index])->create();
     }
 }
+

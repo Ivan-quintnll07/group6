@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('business');
             $table->text("title");
             $table->string("benefit");
+            $table->string("img");
+            $table->string("img_business");
             $table->string("restriction");
             $table->string("category");
             $table->timestamps();
