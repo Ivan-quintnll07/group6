@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Promotion;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/login', function () {
@@ -11,7 +12,9 @@ Route::get('/aboutUs', function () {
 });
 
 Route::get('/calendar', function () {
-    return view('calendar');
+    return view('calendar', [
+        'promotions' => Promotion::all(),
+    ]);
 });
 
 Route::get('/expenseRecord', function () {
