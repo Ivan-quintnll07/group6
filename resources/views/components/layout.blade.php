@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
-    <title>Document</title>
-
+    <title>Click&Save</title>
+    <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
     <style>
         .sidebar {
             transition: transform 0.3s ease;
@@ -33,6 +33,9 @@
             document.getElementById('sidebar').classList.add('sidebar-closed');
         });
     </script>
+    <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+    <script>const Calendar = tui.Calendar;</script>
+    @stack('script')
 </body>
 
 </html>
