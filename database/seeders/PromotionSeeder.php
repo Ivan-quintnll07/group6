@@ -19,7 +19,7 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'McDonalds',
-                'img' => 'mcnifica-res.png',
+                'img' => 'mcdonalds_logo.png',
                 'img_business' => '',
                 'title' => "McNífica™ de Res",
                 'benefit' => 'Una McNífica de Res con papas grandes',
@@ -29,9 +29,9 @@ class PromotionSeeder extends Seeder
 
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
-                'img' => 'mcnifica-res.png',
-                'img_business' => '',
                 'business' => 'Juan Valdez Café',
+                'img' => '',
+                'img_business' => '',
                 'title' => "Por una quesadilla y café de 9oz",
                 'benefit' => 'Obtén descuento en menú y merch al pagar con tus Tarjetas de Crédito o Débito.',
                 'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
@@ -39,9 +39,9 @@ class PromotionSeeder extends Seeder
             ],
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
-                'img' => 'mcnifica-res.png',
-                'img_business' => '',
                 'business' => 'Pizza Hut',
+                'img' => ' ',
+                'img_business' => '',
                 'title' => "Pan de pizza (Tu segunda pizza a $5",
                 'benefit' => 'Obtén tu segunda pizza gigante a $5.',
                 'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
@@ -49,9 +49,9 @@ class PromotionSeeder extends Seeder
             ],
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
-                'img' => 'mcnifica-res.png',
-                'img_business' => '',
                 'business' => 'Sushi itto',
+                'img' => ' ',
+                'img_business' => '',
                 'title' => "15 rollos de sushi de salmón  ",
                 'benefit' => '15 rollos de sushi de salmón con tu soda favorita ',
                 'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
@@ -59,9 +59,9 @@ class PromotionSeeder extends Seeder
             ],
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
-                'img' => 'mcnifica-res.png',
-                'img_business' => '',
                 'business' => 'La tecleña',
+                'img' => ' ',
+                'img_business' => '',
                 'title' => "Pack tecleño tradicional a un super precio",
                 'benefit' => 'Llevate tu pack tecleño tradicional a un super precio ',
                 'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
@@ -69,9 +69,8 @@ class PromotionSeeder extends Seeder
             ],
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
-                'img' => 'mcnifica-res.png',
-                'img_business' => '',
                 'business' => 'Viaje',
+                'img' => ' ',
                 'title' => "Copa América: Costa Rica vs Colombia en Phoenix",
                 'benefit' => '- Tiquete aéreo San José - Phoenix - San José vía United Airlines
                 - 3 noches de alojamiento con desayunos en el Hampton Inn & Suite Phoenix Glendale
@@ -84,8 +83,7 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'Viaje',
-                'img' => 'mcnifica-res.png',
-                'img_business' => '',
+                'img' => ' ',
                 'title' => "Ciudad de México",
                 'benefit' => '- Traslados aeropuerto - hotel- aeropuerto
                     - 4 noches de alojamiento con desayuno en habitación doble en el Hotel Regente
@@ -96,7 +94,7 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
                 'business' => 'Óptica Devlyn',
-                'img' => 'mcnifica-res.png',
+                'img' => ' ',
                 'img_business' => '',
                 'title' => "30% de descuento en lentes Transition en ópticas Devlyn",
                 'benefit' => '30% de descuento aplica para lente graduado desde -3.00 a +3.00 con cilindro hasta -2.00 descuento aplica en la compra de Aro de Diseñador con un costo mayor a $100.00. ',
@@ -107,7 +105,7 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
                 'business' => 'Salud',
-                'img' => 'mcnifica-res.png',
+                'img' => ' ',
                 'img_business' => '',
                 'title' => "Descuentos en Laboratorios identificados por la red SALUD A TU ALCANCE ",
                 'benefit' => '-Plan A: Para ti, tu cónyuge e hijos solteros menores de 24 años
@@ -121,7 +119,7 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Cuscatlán')->first()->id,
                 'business' => 'Cinepolis',
-                'img' => 'mcnifica-res.png',
+                'img' => '',
                 'img_business' => '',
                 'title' => "30% de descuento* en el combo AMIGOS ",
                 'benefit' => 'Precio Débito CUSCATLAN $8.86 | Precio normal: $12.65
@@ -133,7 +131,7 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
                 'business' => 'Viaje',
-                'img' => 'mcnifica-res.png',
+                'img' => ' ',
                 'img_business' => '',
                 'title' => "Viaje Internacional, Europa",
                 'benefit' => '
