@@ -23,6 +23,8 @@ return new class extends Migration
             $table->string("img_business");
             $table->string("restriction", 600)->nullable();
             $table->string("category");
+            $table->timestamp('start');
+            $table->timestamp('end');
             $table->timestamps();
         });
     }

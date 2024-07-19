@@ -1,73 +1,51 @@
+@push('script')
+<script>
+const container = document.getElementById('calendar');
+const options = {
+    useFormPopup: true,
+    useDetailPopup: true,
+  defaultView: 'week',
+  calendars: [
+    {
+      id: 'Salud',
+      name: 'Salud',
+      backgroundColor: '#fcba03',
+    },
+    {
+      id: 'Otros',
+      name: 'Otros',
+      backgroundColor: '#00a9ff',
+    },
+    {
+      id: 'Viajes',
+      name: 'Viajes',
+      backgroundColor: '#2dba40',
+    },
+    {
+      id: 'Restaurante',
+      name: 'Restaurante',
+      backgroundColor: '#a853b5',
+    },
+  ],
+};
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario de Tareas</title>
-    <style>
-       
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
-        .calendar {
-            border-collapse: collapse;
-        }
-        .calendar th,
-        .calendar td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        .task-list {
-            margin-left: 20px;
-            list-style-type: none;
-        }
-        .task-list li {
-            background-color: #f0f0f0;
-            padding: 10px;
-            margin-bottom: 5px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Calendar Section -->
-        <table class="calendar">
-            <thead>
-                <tr>
-                    <th colspan="7">Mes</th>
-                </tr>
-                <tr>
-                    <th>L</th>
-                    <th>M</th>
-                    <th>M</th>
-                    <th>J</th>
-                    <th>V</th>
-                    <th>S</th>
-                    <th>D</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Fill in the calendar days here -->
-                <!-- Example: <tr><td>1</td><td>2</td>...</tr> -->
-            </tbody>
-        </table>
-        <!-- Task List Section -->
-        <ul class="task-list">
-            <!-- Example tasks: -->
-            <li>Clean the garden <i class="far fa-trash-alt"></i></li>
-            <!-- Add more tasks here -->
-        </ul>
-    </div>
-</body>
-</html>
+const calendar = new Calendar(container, options);
+calendar.createEvents([
+    @foreach ($promotions as $promotion)
+    {
+        id: 'event1',
+        calendarId: '{{ $promotion->category }}',
+        title: '{{ $promotion->title }}',
+        body: `{{ str_replace("\`", "\\\`", $promotion->benefit) }}`,
+        start: '{{ $promotion->start }}',
+        end: '{{ $promotion->end }}',
+        isReadOnly: true,
+    },
+    @endforeach
+]);
+</script>
+@endpush
+
+<x-layout>
+    <div id="calendar" style="height: 600px;"></div>
+</x-layout>

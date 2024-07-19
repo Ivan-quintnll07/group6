@@ -31,9 +31,21 @@ class PromotionFactory extends Factory
     public function definition(): array
     {
         return [
-            //"description" => fake()->paragraph(),
-            //"discount_percentage" => fake()->randomFloat(1,0,100),
-            //"bank_id" => $this->banks()->random(),
+            "bank_id" => $this->banks()->random(),
+            "business" => fake()->name(),
+            "title" => fake()->sentence(),
+            "benefit" => fake()->sentence(),
+            "restriction" => fake()->sentence(),
+            "category" => fake()->randomElement([
+                'Descuento',
+                'Cashback',
+                'Puntos',
+                'Millas'
+            ]),
+            "start" => fake()->dateTimeInInterval('-5 days', '+5 days'),
+            "end" => function ($attributes) {
+                return fake()->dateTimeBetween($attributes['start'], '+10 hours');
+            }
             //"card_type_id" => $this->cardTypes()->random(),
         ];
     }
