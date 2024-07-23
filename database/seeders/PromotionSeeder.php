@@ -76,7 +76,7 @@ class PromotionSeeder extends Seeder
                 - 3 noches de alojamiento con desayunos en el Hampton Inn & Suite Phoenix Glendale
                 -Traslados aeropuerto - hotel - aeropuerto
                 - Entrada al estadio para el partido
-                - Traslado hotel - estadio – hotel',
+                - Traslado hotel - estadio - hotel',
                 'restriction' => "Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*",
                 'category' => "Viajes"
             ],
