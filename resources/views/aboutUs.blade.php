@@ -9,7 +9,6 @@
 
 </head>
 <body class="bg-gray-100">
-<<<<<<< Updated upstream
     <header class="bg-white text-black p-4 flex justify-between items-center shadow">
         <button id="menuButton" class="mr-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,8 +36,6 @@
             </nav>
         </div>
     </aside>
-=======
->>>>>>> Stashed changes
 
     <x-bar></x-bar>
     <main class="max-w-5xl mx-auto p-6 bg-white mt-8 rounded-lg shadow-lg">
