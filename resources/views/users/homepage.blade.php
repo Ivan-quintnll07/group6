@@ -8,7 +8,7 @@
         <div class="flex-grow flex items-center justify-center">
             <div class="bg-white bg-opacity-75 p-8 rounded-lg shadow-lg max-w-lg w-full"
                 style="background-color: rgba(255, 255, 255, 0.85);">
-                <h1 class="text-4xl font-bold mb-6 text-center">Mis datos</h1>
+                <h1 class="text-4xl font-bold mb-6 text-center">Perfil</h1>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="flex items-center">
                         <span class="material-icons-outlined mr-2">person</span>
