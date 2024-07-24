@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('business');
             $table->text("title");
             $table->string("benefit", 500);
-            $table->string("img");
-            $table->string("img_business");
+            $table->string("image")->nullable;
+            $table->string("logo")->nullable();
             $table->string("restriction", 600)->nullable();
             $table->string("category");
             $table->timestamp('start');
