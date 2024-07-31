@@ -9,7 +9,7 @@ export default {
         extend: {
             colors: {
                 click: {
-                    'primaryBlue': '#18314F',
+                    'primaryYellow': '#EDDE58',
                     'blue': '',
                 }
             },
