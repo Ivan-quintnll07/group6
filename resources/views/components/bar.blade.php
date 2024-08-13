@@ -8,7 +8,7 @@
             <a href="aboutUs" class="text-slate-950	 hover:text-gray-100 font-poppins">Sobre nosotros</a>
             <a href="signup" class="text-slate-950	 hover:text-gray-100">Registrarse</a>
             <a href="login" class="text-slate-950	 hover:text-gray-100">Iniciar Sesión</a>
-            <a href="login" class="text-slate-950	 hover:text-gray-100">Ofertas</a>
+
         </nav>
     </header>
 
@@ -20,7 +20,7 @@
             <nav class="mt-8">
                 <img src="{{ asset('img/Principal.png') }}">
 
-                <a href="aboutUs" class="block text-slate-950 hover:text-gray-900 mb-4">Sobre nosotros</a>
+                <a href="card-" class="text-slate-950	 hover:text-gray-100">Ofertas</a>
 
                 @guest
                 <a href="signup" class="block text-slate-950 hover:text-gray-900 mb-4">Registrarse</a>
