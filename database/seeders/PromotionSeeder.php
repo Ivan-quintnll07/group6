@@ -19,7 +19,7 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'McDonalds',
-                'image' => '',
+                'image' => 'hamburguesa.jpg',
                 'logo' => 'mcdonalds_logo.png',
                 'title' => 'McNífica™ de Res',
                 'benefit' => 'Una McNífica de Res con papas grandes',
@@ -30,7 +30,7 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'Juan Valdez Café',
-                'image' => '',
+                'image' => 'cafe.jpg',
                 'logo' => 'juanvaldez_logo.jpg',
                 'title' => 'Por una quesadilla y café de 9oz',
                 'benefit' => 'Obtén descuento en menú y merch al pagar con tus Tarjetas de Crédito o Débito.',
@@ -40,8 +40,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'Pizza Hut',
-                'image' => ' ',
-                'logo' => '',
+                'image' => 'pizza_hut.jpg',
+                'logo' => 'pizzahut_logo.png',
                 'title' => 'Pan de pizza (Tu segunda pizza a $5',
                 'benefit' => 'Obtén tu segunda pizza gigante a $5.',
                 'restriction' => 'Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*',
@@ -50,8 +50,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'Sushi itto',
-                'image' => ' ',
-                'logo' => '',
+                'image' => 'sushiitto.jpeg',
+                'logo' => 'sushiitto_logo.jpg',
                 'title' => '15 rollos de sushi de salmón  ',
                 'benefit' => '15 rollos de sushi de salmón con tu soda favorita ',
                 'restriction' => 'Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*',
@@ -60,8 +60,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'La tecleña',
-                'image' => ' ',
-                'logo' => '',
+                'image' => 'teclena.jpeg',
+                'logo' => 'lateclena_logo.png',
                 'title' => 'Pack tecleño tradicional a un super precio',
                 'benefit' => 'Llevate tu pack tecleño tradicional a un super precio ',
                 'restriction' => 'Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*',
@@ -70,7 +70,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'Viaje',
-                'image' => ' ',
+                'image' => 'viaje.jpeg',
+                'logo' => 'bancoagricola_logo.png',
                 'title' => 'Copa América: Costa Rica vs Colombia en Phoenix',
                 'benefit' => '- Tiquete aéreo San José - Phoenix - San José vía United Airlines
                 - 3 noches de alojamiento con desayunos en el Hampton Inn & Suite Phoenix Glendale
@@ -83,7 +84,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Agrícola')->first()->id,
                 'business' => 'Viaje',
-                'image' => ' ',
+                'image' => 'viaje.jpeg',
+                'logo'=> 'bancoagricola_logo.png',
                 'title' => 'Ciudad de México',
                 'benefit' => '- Traslados aeropuerto - hotel- aeropuerto
                     - 4 noches de alojamiento con desayuno en habitación doble en el Hotel Regente
@@ -94,8 +96,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
                 'business' => 'Óptica Devlyn',
-                'image' => ' ',
-                'logo' => '',
+                'image' => 'devlyn.png',
+                'logo' => 'delvyn_logo.jpeg',
                 'title' => '30% de descuento en lentes Transition en ópticas Devlyn',
                 'benefit' => '30% de descuento aplica para lente graduado desde -3.00 a +3.00 con cilindro hasta -2.00 descuento aplica en la compra de Aro de Diseñador con un costo mayor a $100.00. ',
                 'restriction' => 'No aplica compras en línea, ni con otras promociones o descuentos vigentes.
@@ -105,8 +107,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
                 'business' => 'Salud a tu alcance',
-                'image' => ' ',
-                'logo' => '',
+                'image' => 'salud_a_tu_alcance.jpeg',
+                'logo' => 'saludatualcance_logo.png',
                 'title' => 'Descuentos en Laboratorios identificados por la red SALUD A TU ALCANCE ',
                 'benefit' => '-Plan A: Para ti, tu cónyuge e hijos solteros menores de 24 años
                - Plan B: Si eres soltero, para ti y tus padres
@@ -119,8 +121,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Cuscatlán')->first()->id,
                 'business' => 'Cinepolis',
-                'image' => '',
-                'logo' => '',
+                'image' => 'cinepolis.jpeg',
+                'logo' => 'cinepolis_logo.jpeg',
                 'title' => '30% de descuento* en el combo AMIGOS ',
                 'benefit' => 'Precio Débito CUSCATLAN $8.86 | Precio normal: $12.65
                               Incluye: 2 bebidas grandes + 1canasta de palomitas JUMBO ',
@@ -131,8 +133,8 @@ class PromotionSeeder extends Seeder
             [
                 'bank_id' => Bank::where('name', 'Banco Fedecrédito')->first()->id,
                 'business' => 'Viaje',
-                'image' => ' ',
-                'logo' => '',
+                'image' => 'viaje.jpeg',
+                'logo' => 'fedecredito_logo.jpg',
                 'title' => 'Viaje Internacional, Europa',
                 'benefit' => '
                 Incluye:
