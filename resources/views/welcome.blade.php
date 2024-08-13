@@ -1,75 +1,96 @@
 <x-layout>
-
     <div class="bg-gray-100">
-
         <x-bar></x-bar>
 
-        <main class=" flex items-center justify-center h-screen bg-cover " style="background-image: url('https://clubwyndham.wyndhamdestinations.com/content/dam/wyndham/wyndham-vacation-clubs/city-guide/myrtle-beach-destination-guide/myrtle-beach-destination-boardwalk-shopping-1990x810.jpg');">
+        <!-- Modificación en el 'main' para agregar dos imágenes de fondo -->
+        <main class="flex items-center justify-center h-screen bg-cover"
+              style="background-image: url(''),
+                     url('https://your-second-image-url.com');
+                     background-size: 50% 100%;
+                     background-position: left, right;
+                     opacity: 0.9;">
 
-            <div class=" flex items-center justify-start h-full p-8 ">
-                <div class= " bg-white bg-opacity-75 p-8 rounded-lg shadow-lg text-center max-w-lg ">
-                    <h1 class=" text-5xl font-bold mb-4 "> C&S </h1>
-                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <seccion class="flex items-center justify-start h-full p-8 opacity-100">
+                <div class=" p-8 rounded-lg text-center max-w-lg">
+                    <h1 class="text-2xl text-justify mb-4">Ready to save money? Join "Click & Save" today and get the best credit card deals in one place. </h1>
+                    <button class="text-black text-lg px-4 py-2 underline underline-offset-1">Inicar sesion</button>
+                    <button class="text-black text-lg px-4 py-2 underline underline-offset-1">Registrarse</button>
                 </div>
+                </seccion>
             </div>
         </main>
 
-        <div class=" max-w-8xl mx-auto  p-5  mt-20  md:flex md:space-x-6 ">
-            <div class=" md:w-1/2 space-y-4 ">
+        <!-- Contenedor para el texto y la línea horizontal con fondo blanco -->
+        <div class="bg-white flex flex-col justify-start py-20 w-full">
+            <div class="text-center mx-auto mb-8 max-w-2xl mx-auto font-sans">
+                <h2 class="text-4xl font-bold mb-4">"Click and Save: Gathering the Best Credit Card Deals in one place"</h2>
+            </div>
 
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                      </div>
+            <!-- Línea horizontal debajo del texto -->
+            <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: 80px;" />
+        </div>
+
+        <!-- Contenedor para el Swiper -->
+        <div class="swiper-container" style="max-width: 95%; margin: 0 auto; height: 400px; margin-top: -79px;">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Slide 1" />
                     </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
-
-            </div>
-            <div class= " md:w-1/2 mt-6 md:mt-20 pt-14 ">
-               <h2 class=" text-4xl font-bold mb-4 place-items-center h-20 text-center ">Sobre nosotros</h2>
-               <p class=" text-gray-700 mb-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p class=" text-gray-700 mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Slide 2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Slide 3" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Slide 4" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Slide 5" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Slide 6" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Slide 7" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Slide 8" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Slide 9" />
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class=" flex justify-center mt-20 ">
-            <div class="flex space-x-20">
+        <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: -0px;" />
+        <div class="relative h-screen">
+            <!-- Línea horizontal amarilla mucho más gruesa -->
+            <hr class="border-yellow-500 mx-auto w-full" style="margin-top: 0; border-top-width: 20px;" />
 
-                <div class="shadow-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700 text-white text-justify font-sans w-96 h-96 bg-click-primaryBlue flex flex-col items-center justify-center text-sm rounded-lg"><a class="font-bold text-xl flex-initial mb-4">Misión</a><p class="text-center mx-10 text-base">Una plataforma reconocida por su fiabilidad, en la cual los usuarios recurren para poder tener una experiencia única en ahorro. Localmente conocida, donde las personas tengan un fácil acceso a las promociones que ofrecen las tarjetas de crédito.</p></div>
-                <div class="shadow-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700 text-white text-justify font-sans w-96 h-96 bg-click-primaryBlue flex flex-col items-center justify-center text-sm rounded-lg"><a class="font-bold text-xl flex-initial mb-4">Visión</a><p class="text-center mx-10 text-base">Brindarle la mejor experiencia de uso a los consumidores a través de la innovación del conocimiento en cuanto a información y beneficios de una tarjeta de crédito mediante el sitio web que brindaremos, ofreciéndoles información fidedigna.</p></div>
-            </div>
-        </div>
+            <!-- Imagen con una altura personalizada de 60px -->
+            <img src="https://clubwyndham.wyndhamdestinations.com/content/dam/wyndham/wyndham-vacation-clubs/city-guide/myrtle-beach-destination-guide/myrtle-beach-destination-boardwalk-shopping-1990x810.jpg" alt="Descripción de la imagen"
+            class="w-full object-cover" style="height: 125px;" />
 
-        <div class=" flex justify-center pt-12 h-screen">
-            <div class="">
-                <div class="shadow-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-700 mx-20 text-white text-justify font-sans w-83 h-60 bg-click-primaryBlue flex flex-col items-center justify-center text-sm rounded-lg"><a class="font-bold text-xl flex-initial mb-4 ">Visión</a><p class="text-center mx-10 text-base">Brindarle la mejor experiencia de uso a los consumidores a través de la innovación del conocimiento en cuanto a información y beneficios de una tarjeta de crédito mediante el sitio web que brindaremos, ofreciéndoles información fidedigna.</p></div>
+            <!-- Texto "Nuestra historia" en la esquina inferior izquierda -->
+            <div class="absolute top-60 left-10">
+                <p class="text-2xl font-bold text-gray-800">Nuestra historia</p>
             </div>
+
+            <div class="absolute bottom-5 right-20">
+                <img src="https://clubwyndham.wyndhamdestinations.com/content/dam/wyndham/wyndham-vacation-clubs/city-guide/myrtle-beach-destination-guide/myrtle-beach-destination-boardwalk-shopping-1990x810.jpg" alt="Descripción de la imagen" class="w-90 h-40" />
+            </div>
+
+            <div class="absolute bottom-[-90px] left-2 w-full bg-white py-0">
+                <p class="text-center text-2xl font-semibold text-gray-800">Todos los miembros</p>
+            </div>
+            <div class="h-screen">
+
+            </div>
+
         </div>
+    </div>
     </div>
 </x-layout>
