@@ -13,7 +13,7 @@ export default {
                 click: {
                     'primaryYellow': '#EDDE58',
                     'blue1': '#18314F',
-                    'blue2': '#38477',
+                    'blue2': '#384E77',
                     'blue3': '#0051F5',
                     'blue4': '#12B6F5',
                     'greenlime': '#E6F9AF',
