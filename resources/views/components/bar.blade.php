@@ -9,6 +9,7 @@
             <a href="signup" class="text-slate-950	 hover:text-gray-100">Registrarse</a>
             <a href="login" class="text-slate-950	 hover:text-gray-100">Iniciar Sesión</a>
 
+
         </nav>
     </header>
 
@@ -18,9 +19,9 @@
                 close
             </span>
             <nav class="mt-8">
-                <img src="{{ asset('img/Principal.png') }}">
+                <img src="{{ asset('img/Principal.png') }}" width="140" height="10" aling="center">
 
-                <a href="card-" class="text-slate-950	 hover:text-gray-100">Ofertas</a>
+                <a href="card-offer" class="text-slate-950 hover:text-gray-100">Ofertas</a>
 
                 @guest
                 <a href="signup" class="block text-slate-950 hover:text-gray-900 mb-4">Registrarse</a>
