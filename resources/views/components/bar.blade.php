@@ -5,7 +5,7 @@
         </span>
 
         <nav class="space-x-4">
-            <a href="aboutUs" class="text-slate-950	 hover:text-gray-100 font-poppins">Sobre nosotros</a>
+            
             <a href="signup" class="text-slate-950	 hover:text-gray-100">Registrarse</a>
             <a href="login" class="text-slate-950	 hover:text-gray-100">Iniciar Sesión</a>
 
