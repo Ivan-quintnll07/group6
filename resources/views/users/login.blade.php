@@ -4,7 +4,7 @@
         style="background-image: url('https://img.freepik.com/fotos-premium/pared-blanca-hoja-palma-sombra-palmera_902049-16530.jpg');">
         <div class="flex justify-center items-center h-screen">
             <div class="backdrop-blur-sm bg-white/30 rounded-md px-6 py-6">
-                <h1 class="text-6xl block text-center font-bold"><i class="fa-regular fa-user"></i> Inicia Sesión</h1>
+                <h1 class="text-6xl block text-center font-poppins"><i class="fa-regular fa-user"></i> Iniciar Sesión</h1>
                 <hr class="mt-3">
                 <form action="/login" method="POST" class="bg-gray shadow-md space-y-4 rounded px-8 pt-6 pb-8 mb-4">
                     @csrf

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="icon" type="image/x-icon" href="{{ asset('img/Principal.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/Isotipo C&S.png') }}">
     <style>
         .sidebar {
             transition: transform 0.3s ease;
