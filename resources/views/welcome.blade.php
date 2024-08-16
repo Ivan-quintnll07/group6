@@ -29,8 +29,13 @@
         <div class="swiper-container" style="max-width: 100%; margin: 0 auto; height: 400px; margin-top: -60px;">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+<<<<<<< Updated upstream
                     <div class="swiper-slide ">
                         <img src="{{ '/img/welcome1' }}" alt="Slide 1" />
+=======
+                    <div class="swiper-slide">
+                        <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/87/2023/03/16170745/how-to-protect-EMV-and-NFC-bank-cards-featured.jpg" alt="Slide 1" />
+>>>>>>> Stashed changes
                     </div>
                     <div class="swiper-slide">
                         <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Slide 2" />
@@ -61,19 +66,23 @@
         </div>
 
         <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: -0px;" />
+        <div class="bg-click-primaryYellow text-click-primaryYellow">hola</div>
         <div class="relative h-screen">
-            <hr class="border-yellow-500 mx-auto w-full" style="margin-top: 0; border-top-width: 20px;" />
 
-            <img src="https://clubwyndham.wyndhamdestinations.com/content/dam/wyndham/wyndham-vacation-clubs/city-guide/myrtle-beach-destination-guide/myrtle-beach-destination-boardwalk-shopping-1990x810.jpg" alt="Descripción de la imagen"
-            class="w-full object-cover" style="height: 125px;" />
+            <div
+            class="w-full h-[calc(100vh-125px)]  bg-cover" style="height: 125px; background-image: url({{asset('img/crediCart.jpg')}})" ></div>
 
 
             <div class="absolute top-60 left-10">
-                <p class="text-2xl font-bold text-gray-800">Nuestra historia</p>
+                <p class="text-5xl font-bold text-gray-800 mt-[-14]">Nuestra historia</p>
             </div>
 
             <div class="absolute bottom-5 right-20">
-                <img src="https://clubwyndham.wyndhamdestinations.com/content/dam/wyndham/wyndham-vacation-clubs/city-guide/myrtle-beach-destination-guide/myrtle-beach-destination-boardwalk-shopping-1990x810.jpg" alt="Descripción de la imagen" class="w-90 h-40" />
+                <img src="{{ asset('img/Principal.png') }}" alt="Descripción de la imagen" class="w-90 h-40" />
+            </div>
+
+            <div class="absolute bottom-60 left-10">
+                <p class="text-xl font-bold text-gray-800 w-96 mt-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
 
             <div class="absolute bottom-[-90px] left-2 w-full bg-white py-0">
