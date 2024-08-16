@@ -5,7 +5,7 @@
         </span>
 
         <nav class="space-x-4">
-            
+
             <a href="signup" class="text-slate-950	 hover:text-gray-100">Registrarse</a>
             <a href="login" class="text-slate-950	 hover:text-gray-100">Iniciar Sesión</a>
 
@@ -13,7 +13,7 @@
         </nav>
     </header>
 
-    <aside class="fixed inset-y-0 left-0 w-64 bg-click-primaryYellow shadow-md sidebar sidebar-closed" id="sidebar">
+    <aside class="fixed z-40 inset-y-0 left-0 w-64 bg-click-primaryYellow shadow-md sidebar sidebar-closed" id="sidebar">
         <div class="p-4">
             <span class="material-symbols-outlined cursor-pointer" id="closeButton">
                 close

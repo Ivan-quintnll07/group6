@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="bg-gray-100 overflow-clip">
+    <div class="bg-gray-100 overflow-clip ">
         <x-bar/>
 
         <!-- Modificación en el 'main' para agregar dos imágenes de fondo -->
@@ -29,7 +29,7 @@
         <div class="swiper-container" style="max-width: 100%; margin: 0 auto; height: 400px; margin-top: -60px;">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide ">
                         <img src="{{ '/img/welcome1' }}" alt="Slide 1" />
                     </div>
                     <div class="swiper-slide">
