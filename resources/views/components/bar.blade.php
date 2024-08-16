@@ -24,7 +24,7 @@
                 <a href="card-offer" class="text-slate-950 hover:text-gray-100">Ofertas</a>
 
                 @guest
-                <a href="signup" class="block text-slate-950 hover:text-gray-900 mb-4">Registrarse</a>
+                <a href="signup" class="block text-slate-950 hover:text-gray-900">Registrarse</a>
                 <a href="login" class="block text-slate-950 hover:text-gray-900">Iniciar Sesión</a>
                 @endguest
 
