@@ -1,3 +1,4 @@
+<bar> </bar>
 @push('script')
 <script>
 const container = document.getElementById('calendar');

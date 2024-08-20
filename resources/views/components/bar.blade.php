@@ -21,18 +21,21 @@
             <nav class="mt-8">
                 <img src="{{ asset('img/Principal.png') }}" width="140" height="10" aling="center">
 
-                <a href="card-offer" class="text-slate-950 hover:text-gray-100">Ofertas</a>
+                <a href="offer" class="text-slate-950 hover:text-gray-100">Ofertas</a>
 
                 @guest
                 <a href="signup" class="block text-slate-950 hover:text-gray-900">Registrarse</a>
                 <a href="login" class="block text-slate-950 hover:text-gray-900">Iniciar Sesión</a>
+                <a href="welcome" class="block text-slate-950 hover:text-gray-900">Pagina Principal</a>
+            
+
                 @endguest
 
                 @auth
                 <a href="signup" class="block text-slate-950 hover:text-gray-900 mb-4">XDXXDXD</a>
                 @endauth
 
-                <a href="welcome" class="block text-slate-950 hover:text-gray-900">Pagina Principal</a>
+
             </nav>
 
         </div>
