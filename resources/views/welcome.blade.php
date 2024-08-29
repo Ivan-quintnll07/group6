@@ -2,12 +2,11 @@
     <div class="bg-gray-100 overflow-clip ">
         <x-bar />
 
-        <!-- Modificación en el 'main' para agregar dos imágenes de fondo -->
         <main class="flex items-center justify-center relative">
 
             <section class="h-[calc(100vh-50px)] w-1/2 bg-cover "
                 style="background-image: url({{ asset('img/home1.jpg') }})"></section>
-            <section class="h-[calc(100vh-50px)] w-1/2 bg-cover "
+            <section class="h-[calc(100vh-50px)] w-1/2 bg-cover ">
                 style="background-image: url({{ asset('img/home2.jpg') }})"></section>
 
             <div class="absolute flex items-center justify-start h-full p-8 opacity-100 text-white">
@@ -80,7 +79,7 @@
             </div>
 
             <div class="absolute bottom-5 right-20">
-                <img src="{{ asset('img/Principal.png') }}" alt="Descripción de la imagen" class="w-90 h-40" />
+                <img src="{{ asset('img/Principal.png') }}" alt="Descripción de la imagen" class="w-70 h-80" />
             </div>
 
             <div class="absolute bottom-60 left-10">
@@ -95,6 +94,22 @@
         <div class="left-2 w-full pt-10">
             <p class="text-center text-5xl font-bold text-gray-800">Todos los miembros</p>
         </div>
+        <div class="flex flex-row justify-around my-10">
+             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 relative" />
+             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 relative" />
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 relative" />
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 relative" />
+        </div>
+
+        <div class="relative mx-10">
+           <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80" />
+           <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 absolute right-0 bottom-1/2 translate-y-1/2" />
+           <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 mt-52"/>
+       </div>
+    </div>
+
+    <div>
+    </div>
     </div>
     </div>
 </x-layout>
