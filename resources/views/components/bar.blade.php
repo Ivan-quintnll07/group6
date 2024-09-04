@@ -2,6 +2,7 @@
     <header class="bg-click-primaryYellow p-4 shadow-md flex justify-between items-center">
         <span class="material-symbols-outlined cursor-pointer" id="menuButton">
             menu
+
         </span>
 
         <nav class="space-x-4">
