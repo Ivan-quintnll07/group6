@@ -1,11 +1,10 @@
 <x-layout>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <div class="flex flex-col h-screen bg-cover bg-center"
-         style="background-image: url('https://www.rrd.com/uploads/thoughts/items/independent-health-upgrades-to-digital-payment-and-distribution-system-healthcare_20230228_pageimage.jpg');">
+    <div class="flex flex-col h-screen bg-cover bg-center bg-['{{asset('img/bg/creditCard.jpg')}}']">
         <form action="/cards/create" method="POST">
             @csrf
 
-            <x-bar></x-bar>
+            <x-bar/>
 
             <div class="flex-grow flex h-[calc(100vh-57px)] items-center justify-center">
                 <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full"
