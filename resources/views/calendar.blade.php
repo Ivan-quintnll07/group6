@@ -1,4 +1,4 @@
-<bar> </bar>
+<x-bar> </x-bar>
 @push('script')
 <script>
 const container = document.getElementById('calendar');

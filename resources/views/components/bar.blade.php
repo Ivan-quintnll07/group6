@@ -21,13 +21,15 @@
             <nav class="mt-8">
                 <img src="{{ asset('img/Principal.png') }}" width="140" height="10" aling="center">
 
-                <a href="offer" class="text-slate-950 hover:text-gray-100">Ofertas</a>
+
 
                 @guest
-                <a href="signup" class="block text-slate-950 hover:text-gray-900">Registrarse</a>
-                <a href="login" class="block text-slate-950 hover:text-gray-900">Iniciar Sesión</a>
-                <a href="welcome" class="block text-slate-950 hover:text-gray-900">Pagina Principal</a>
-            
+                <b><a href="/" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Pagina Principal</a></b>
+                <b><a href="signup" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Registrarse</a></b>
+                <b><a href="login" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Iniciar Sesión</a></b>
+                <b><a href="calendar" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Calendario</a></b>
+                <b><a href="education" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Educacion </a></b>
+                <b><a href="offer" class="text-slate-950 hover:text-gray-100 text-xl">Ofertas</a></b>
 
                 @endguest
 
