@@ -4,9 +4,8 @@
 
         <main class="flex items-center justify-center relative">
 
+            <section class="h-[calc(100vh-50px)] w-1/2 bg-cover " style="background-image: url({{ asset('img/home1.jpg') }})"></section>
             <section class="h-[calc(100vh-50px)] w-1/2 bg-cover "
-                style="background-image: url({{ asset('img/home1.jpg') }})"></section>
-            <section class="h-[calc(100vh-50px)] w-1/2 bg-cover ">
                 style="background-image: url({{ asset('img/home2.jpg') }})"></section>
 
             <div class="absolute flex items-center justify-start h-full p-8 opacity-100 text-white">
@@ -35,10 +34,10 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide ">
-                        <img src="{{ '/img/welcome1' }}" alt="Slide 1" />
+                        <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/87/2023/03/16170745/how-to-protect-EMV-and-NFC-bank-cards-featured.jpg" alt="Slide 1" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Slide 2" />
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Slide 2" />
                     </div>
                     <div class="swiper-slide">
                         <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/87/2023/03/16170745/how-to-protect-EMV-and-NFC-bank-cards-featured.jpg"
@@ -63,6 +62,9 @@
                         <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Slide 9" />
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
             </div>
         </div>
 
@@ -94,20 +96,41 @@
         <div class="left-2 w-full pt-10">
             <p class="text-center text-5xl font-bold text-gray-800">Todos los miembros</p>
         </div>
-        <div class="flex flex-row justify-around my-10">
-             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 relative" />
-             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 relative" />
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 relative" />
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 relative" />
+
+        <div class="grid grid-cols-5 my-10 mx-16 gap-5">
+             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-4" />
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
         </div>
 
-        <div class="relative mx-10">
-           <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80" />
-           <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 absolute right-0 bottom-1/2 translate-y-1/2" />
-           <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-80 mt-52"/>
+        <div class="Text-right mx-60 Text-5Xl"> Backend</div>
+
+        <div class="grid grid-cols-5 my-5 mx-16 gap-5 mr-20">
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+            <div class="mt-40 Text-right Text-5Xl">Branding</div>
+        </div>
+
+        <div class="grid grid-cols-5 my-10 mx-16 gap-5 -mt-60">
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-5" />
+        </div>
+
+        <div class="Text-right mx-80 Text-5Xl"> UX/UI</div>
+
+        <div class="grid grid-cols-5 my-10 mx-16 gap-5">
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+        </div>
+        <div class="pl-60 Text-5Xl">Frontend</div>
        </div>
     </div>
 
+    {{-- esta onda no funciona --}}
+    {{-- <div class="h-screen">
+        <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: 80px;" />
+    </div> --}}
+
+    </div>
     <div>
     </div>
     </div>

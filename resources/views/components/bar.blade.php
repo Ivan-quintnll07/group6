@@ -27,7 +27,7 @@
                 <a href="signup" class="block text-slate-950 hover:text-gray-900">Registrarse</a>
                 <a href="login" class="block text-slate-950 hover:text-gray-900">Iniciar Sesión</a>
                 <a href="welcome" class="block text-slate-950 hover:text-gray-900">Pagina Principal</a>
-            
+
 
                 @endguest
 
