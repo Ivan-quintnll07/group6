@@ -1,4 +1,4 @@
-..<?php
+<?php
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CardController;
 use Illuminate\Support\Facades\Route;
