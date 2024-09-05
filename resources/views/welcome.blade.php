@@ -21,7 +21,7 @@
         </main>
 
 
-        <div class="bg-white flex flex-col justify-start py-20 w-full">
+        <div class="bg-white flex flex-col justify-start pt-16 w-full">
             <div class="text-center mx-auto mb-8 max-w-5xl mx-auto">
                 <h2 class="text-5xl mb-4 italic font-thin">"Click and Save: Gathering the Best Credit Card Deals in one
                     place"</h2>
@@ -34,32 +34,25 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide ">
-                        <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/87/2023/03/16170745/how-to-protect-EMV-and-NFC-bank-cards-featured.jpg" alt="Slide 1" />
+                        <img src="{{ asset('img/creditCard2.jpg') }}" alt="Slide 1" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Slide 2" />
+                        <img src="{{ asset('img/creditCard1.jpg') }}"  alt="Slide 2" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/87/2023/03/16170745/how-to-protect-EMV-and-NFC-bank-cards-featured.jpg"
-                            alt="Slide 3" />
+                        <img src="{{ asset('img/creditCard3.jpg') }}"  alt="Slide 3" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Slide 4" />
+                        <img src="{{ asset('img/creditCard4.jpg') }}"  alt="Slide 4" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Slide 5" />
+                        <img src="{{ asset('img/creditCard5.jpg') }}"  alt="Slide 5" />
+                    </div>
+                    <div class="swiper-slide>
+                        <img src="{{ asset('img/creditCard6.jpg') }} alt="Slide 6" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Slide 6" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Slide 7" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Slide 8" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Slide 9" />
+                        <img src="{{ asset('img/creditCard7.jpg') }}"  alt="Slide 7" />
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
@@ -70,8 +63,8 @@
 
         <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: -0px;" />
         <div class="bg-click-primaryYellow text-click-primaryYellow">hola</div>
-        <div class="relative h-screen">
 
+        <div class="relative h-screen">
             <div class="w-full h-[calc(100vh-125px)]  bg-cover"
                 style="height: 125px; background-image: url({{ asset('img/crediCart.jpg') }})"></div>
 
@@ -85,7 +78,7 @@
             </div>
 
             <div class="absolute bottom-60 left-10">
-                <p class="text-xl font-bold text-gray-800 w-96 mt-6">Lorem Ipsum is simply dummy text of the printing
+                <p class="text-xl font-bold text-gray-800 w-96 mt-6">Lorem Ipsum is simply dummy text of the printing
                     and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
                     1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
@@ -101,10 +94,13 @@
              <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
              <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-4" />
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-5" />
         </div>
 
-        <div class="Text-right mx-60 Text-5Xl"> Backend</div>
+        <div class="grid grid-cols-5">
+            <p class="text-5xl col-span-2 text-center col-start-4">Backend</p>
+        </div>
+
 
         <div class="grid grid-cols-5 my-5 mx-16 gap-5 mr-20">
             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
@@ -112,7 +108,8 @@
         </div>
 
         <div class="grid grid-cols-5 my-10 mx-16 gap-5 -mt-60">
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-5" />
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-4" />
+            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto " />
         </div>
 
         <div class="Text-right mx-80 Text-5Xl"> UX/UI</div>
@@ -122,17 +119,24 @@
             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
         </div>
         <div class="pl-60 Text-5Xl">Frontend</div>
+
+
+        <div class="h-screen">
+            <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: 80px;" />
+            <div class="bg-click-primaryYellow text-click-primaryYellow">hola</div>
+            <div class="pt-40">
+                <div class="grid grid-cols-3">
+                    <div class="bg-click-primaryYellow col-start-1 mr-20">
+                        <a>hola</a>
+                    </div>
+                    <div class="bg-click-primaryYellow col-start-2">hola</div>
+                    <div class="bg-click-primaryYellow col-start-3 ml-20">hola</div>
+                </div>
+            </div>
+        </div>
        </div>
     </div>
-
-    {{-- esta onda no funciona --}}
-    {{-- <div class="h-screen">
-        <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: 80px;" />
-    </div> --}}
-
-    </div>
-    <div>
-    </div>
+     </div>
     </div>
     </div>
 </x-layout>
