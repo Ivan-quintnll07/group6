@@ -25,17 +25,20 @@
 
 
                 @guest
-                <b><a href="/" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Pagina Principal</a></b>
-                <b><a href="signup" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Registrarse</a></b>
-                <b><a href="login" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Iniciar Sesión</a></b>
-                <b><a href="calendar" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Calendario</a></b>
-                <b><a href="education" class="block text-slate-950 hover:text-gray-900 text-xl h-9">Educacion </a></b>
-                <b><a href="offer" class="text-slate-950 hover:text-gray-100 text-xl">Ofertas</a></b>
+                <b><a href="/" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Página Principal</a></b>
+                <b><a href="signup" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Registrarse</a></b>
+                <b><a href="login" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Iniciar Sesión</a></b>
+                <b><a href="calendar" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Calendario</a></b>
+                <b><a href="education" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Educacion </a></b>
+                <b><a href="offer" class="text-slate-950 hover:text-gray-100 text-xl h-9">Ofertas</a></b>
 
                 @endguest
 
                 @auth
-                <a href="signup" class="block text-slate-950 hover:text-gray-900 mb-4">XDXXDXD</a>
+                <b><a href="/" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Página Principal</a></b>
+                <b><a href="calendar" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Calendario</a></b>
+                <b><a href="education" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Educacion </a></b>
+                <b><a href="offer" class="text-slate-950 hover:text-gray-100 text-xl h-9">Ofertas</a></b>
                 @endauth
 
 
