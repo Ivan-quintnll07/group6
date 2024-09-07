@@ -1,15 +1,17 @@
 <body class="bg-gray-100">
     <header class="bg-click-primaryYellow p-4 shadow-md flex justify-between items-center">
-        <span class="material-symbols-outlined cursor-pointer" id="menuButton">
-            menu
+        <div class="flex items-center">
+            <span class="material-symbols-outlined cursor-pointer" id="menuButton">
+                menu
+            </span>
 
-        </span>
+            <img src="{{ asset('img/logoBlanco.png') }}" width="150" aling="center" class="ml-4">
+        </div>
 
         <nav class="space-x-4">
 
             <a href="signup" class="text-slate-950	 hover:text-gray-100">Registrarse</a>
             <a href="login" class="text-slate-950	 hover:text-gray-100">Iniciar Sesión</a>
-
 
         </nav>
     </header>
@@ -21,8 +23,6 @@
             </span>
             <nav class="mt-8">
                 <img src="{{ asset('img/Principal.png') }}" width="140" height="10" aling="center">
-
-
 
                 @guest
                 <b><a href="/" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Página Principal</a></b>
