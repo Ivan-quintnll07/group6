@@ -1,10 +1,9 @@
 <x-layout>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <form action="/cards/create" method="POST">
-        <div class="flex flex-col h-screen bg-cover bg-center bg-['url({{asset('img/bg/creditCard.jpg')}})']"
-                style="background-image: url('img/bg/creditCard.jpg')"
-            >
-            <!--IMAGEN NO CARGA-->
+        <div class="flex flex-col h-screen bg-cover bg-center"
+     style="background-image: url('{{asset('img/bg/creditCard.jpg')}}')">
+
         @csrf
 
         <x-bar/>
