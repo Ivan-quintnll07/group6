@@ -91,34 +91,34 @@
         </div>
 
         <div class="grid grid-cols-5 my-10 mx-16 gap-5">
-             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
-             <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-4" />
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-5" />
+             <img src="{{ asset('img/fernanda.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+             <img src="{{ asset('img/amelia.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+            <img src="{{ asset('img/Elias.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-4" />
+            <img src="{{ asset('img/iván.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-5" />
         </div>
 
-        <div class="grid grid-cols-5">
-            <p class="text-5xl col-span-2 text-center col-start-4">Backend</p>
-        </div>
+        {{-- <div class="grid grid-cols-5">
+            <p class="text-5xl col-span-2 text-center col-span-4">Backend</p>
+        </div> --}}
 
 
         <div class="grid grid-cols-5 my-5 mx-16 gap-5 mr-20">
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
-            <div class="mt-40 Text-right Text-5Xl">Branding</div>
+            <img src="{{ asset('img/xiomara.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+            {{-- <div class="mt-40 Text-right Text-5Xl">Branding</div> --}}
         </div>
 
         <div class="grid grid-cols-5 my-10 mx-16 gap-5 -mt-60">
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-4" />
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto " />
+            <img src="{{ asset('img/mariana.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-4" />
+            <img src="{{ asset('img/Sonia.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto " />
         </div>
 
-        <div class="Text-right mx-80 Text-5Xl"> UX/UI</div>
+        {{-- <div class="Text-right mx-80 Text-5Xl"> UX/UI</div> --}}
 
         <div class="grid grid-cols-5 my-10 mx-16 gap-5">
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
-            <img src="{{ asset('img/foto1.jpg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+            <img src="{{ asset('img/sofia.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
+            <img src="{{ asset('img/Brandon.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
         </div>
-        <div class="pl-60 Text-5Xl">Frontend</div>
+        {{-- <div class="pl-60 Text-5Xl">Frontend</div> --}}
 
 
         <div class="h-screen">
