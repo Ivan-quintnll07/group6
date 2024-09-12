@@ -8,12 +8,14 @@
             <img src="{{ asset('img/logoBlanco.png') }}" width="150" aling="center" class="ml-4">
         </div>
 
+        @guest
         <nav class="space-x-4">
 
             <a href="signup" class="text-slate-950	 hover:text-gray-100">Registrarse</a>
             <a href="login" class="text-slate-950	 hover:text-gray-100">Iniciar Sesión</a>
 
         </nav>
+        @endguest
     </header>
 
     <aside class="fixed z-40 inset-y-0 left-0 w-64 bg-click-primaryYellow shadow-md sidebar sidebar-closed" id="sidebar">
@@ -39,7 +41,7 @@
                 <b><a href="/" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Página Principal</a></b>
                 <b><a href="calendar" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Calendario</a></b>
                 <b><a href="education" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Educación </a></b>
-                <b><a href="form" class="text-slate-950 hover:text-gray-100 text-xl h-9">Agregar Tarjeta</a></b>
+                <b><a href="addCard" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Agregar Tarjeta</a></b>
                 <b><a href="offer" class="text-slate-950 hover:text-gray-100 text-xl h-9">Ofertas</a></b>
                 @endauth
 
