@@ -26,8 +26,8 @@
                                 account_balance
                                 </span>
                             <select name="bank_id" id="bank_id" class="form-select mt-1 block w-full">
-                                @foreach ($banks as $banco)
-                                    <option value="{{$banco->id}}">{{$banco->name}}</option>
+                                @foreach ($banks as $bank)
+                                    <option value="{{$bank->id}}">{{$bank->name}}</option>
                                 @endforeach
                             </select>
                         </div>

@@ -2,6 +2,8 @@
 
 use App\Models\Promotion;
 use Illuminate\Support\Facades\Route;
+use App\Models\Bank;
+use App\Models\Card;
 
 Route::get('/login', function () {
     return view('users.login');
@@ -31,6 +33,13 @@ Route::get('/', function () {
 
 Route::get('/education', function () {
     return view('education');
+});
+
+Route::get('/addCard', function () {
+    return view('cards/addCard', [
+        'banks' => Bank::all(),
+        'CardType' =>Card::all(),
+    ]);
 });
 
 
