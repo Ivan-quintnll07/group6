@@ -1,9 +1,11 @@
 <x-layout>
     <x-bar> </x-bar>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <div class="flex flex-col h-screen bg-cover bg-center bg-['url({{asset('img/bg/creditCard.jpg')}})']"
-            style="background-image: url('img/bg/thumbnail_iniciar sesion.jpg')"
-         >
+    <div class="flex flex-col h-screen bg-cover bg-center bg-['url({{asset('img/bg/login.jpg')}})']"
+    style="background-image: url('img/bg/thumbnail_iniciar sesion.jpg')"
+    >
+
+    
         <div class="flex justify-center items-center h-screen">
             <div class="backdrop-blur-sm bg-white/30 rounded-md px-6 py-6">
                 <h1 class="text-6xl block text-center font-poppins"><i class="fa-regular fa-user"></i> Iniciar Sesión</h1>
