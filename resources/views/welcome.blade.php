@@ -97,9 +97,9 @@
             <img src="{{ asset('img/iván.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto col-start-5" />
         </div>
 
-        {{-- <div class="grid grid-cols-5">
+        <div class="grid grid-cols-5">
             <p class="text-5xl col-span-2 text-center col-span-4">Backend</p>
-        </div> --}}
+        </div>
 
 
         <div class="grid grid-cols-5 my-5 mx-16 gap-5 mr-20">
@@ -121,16 +121,42 @@
         {{-- <div class="pl-60 Text-5Xl">Frontend</div> --}}
 
 
-        <div class="h-screen">
+        <div class="bg-gray-100">
             <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: 80px;" />
             <div class="bg-click-primaryYellow text-click-primaryYellow">hola</div>
             <div class="pt-40">
+
+
+            <div class="h-screen">
                 <div class="grid grid-cols-3">
-                    <div class="bg-click-primaryYellow col-start-1 mr-20">
-                        <a>hola</a>
+
+                    <div class="bg-gray-300 col-start-1 mr-20 h-30 drop-shadow-lg ">
+                        <div class="text-center pt-20 pb-8 font-poppins text-5xl">  Vision </div>
+                     <div class="space-y-10 text-center px-8">
+                        <p> To be a platform recognized for its reliability, where users turn to for a unique savings experience. Locally known where people have easy access to the promotions offered by credit cards.</p>
+                     </div>
                     </div>
-                    <div class="bg-click-primaryYellow col-start-2">hola</div>
-                    <div class="bg-click-primaryYellow col-start-3 ml-20">hola</div>
+
+                    <div class="bg-gray-300 col-start-2 h-30 drop-shadow-lg">
+                        <div class="text-center pt-20 pb-8 font-poppins text-5xl"> Values </div>
+                     <div class="space-y-10 text-center px-8">
+                        <p>Integrity: In our website there will always be respect acting in a fair and ethical manner. </p>
+                        <p>Honesty: To be transparent with the information collected. </p>
+                        <p>Trustworthiness: Convey reliability through information supported by official sites. </p>
+                        <p class="pb-8">Professional Innovation: Constantly seek new and creative ways to address challenges and improve professionally.</p>
+                     </div>
+                    </div>
+
+                    <div class="bg-gray-300 col-start-3 ml-20 drop-shadow-lg">
+                        <div class="text-center pt-20 pb-8 font-poppins text-5xl">  Mission </div>
+                     <div class="space-y-10 text-center px-8">
+                        <p>To provide the best user experience to consumers through the innovation of knowledge in terms of information and benefits of a credit card through the web site that we will provide, offering reliable information. </p>
+                     </div>
+                    </div>
+                    {{-- <div class="bg-click-primaryYellow col-start-3 ml-20">hola</div> --}}
+                </div>
+            </div>
+
                 </div>
             </div>
         </div>
