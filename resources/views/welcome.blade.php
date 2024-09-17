@@ -70,7 +70,7 @@
 
 
             <div class="absolute top-60 left-10">
-                <p class="text-5xl font-bold text-gray-800 mt-[-14]">Nuestra historia</p>
+                <p class="text-5xl font-bold text-gray-800 mt-14">Nuestra historia</p>
             </div>
 
             <div class="absolute bottom-5 right-20">
@@ -78,9 +78,7 @@
             </div>
 
             <div class="absolute bottom-60 left-10">
-                <p class="text-xl font-bold text-gray-800 w-96 mt-6">Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                    1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <p class="text-sm font-bold text-gray-800 w-96 mt-6 mt-10">Click and Save, a website created with the objective to help people saving money by offers, getting the most out of their credit cards and a tool to learn about financial education. Our backend and frontend members used Laravel, CSS, MySQL, Tailwind, and JavaScript (JSS) for the development of the website, which took 7 months to complete and our branding member who used Adobe Ilustrator to create the website desing. This whole process is also thanks to our mentor Ms. Alejandra Quiroa who was in charge of our project.
                 </p>
             </div>
         </div>
@@ -98,7 +96,7 @@
         </div>
 
         <div class="grid grid-cols-5">
-            <p class="text-5xl col-span-2 text-center col-span-4">Backend</p>
+            {{-- <p class="text-5xl col-span-2 text-center col-span-4">Backend</p> --}}
         </div>
 
 
@@ -143,7 +141,7 @@
                         <p>Integrity: In our website there will always be respect acting in a fair and ethical manner. </p>
                         <p>Honesty: To be transparent with the information collected. </p>
                         <p>Trustworthiness: Convey reliability through information supported by official sites. </p>
-                        <p class="pb-8">Professional Innovation: Constantly seek new and creative ways to address challenges and improve professionally.</p>
+                        <p class="pb-8">Innovation: Constantly seek new and creative ways to address challenges and improve professionally.</p>
                      </div>
                     </div>
 
@@ -154,6 +152,19 @@
                      </div>
                     </div>
                     {{-- <div class="bg-click-primaryYellow col-start-3 ml-20">hola</div> --}}
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div class="bg-click-primaryYellow pb-60"><div>
+                        <div class="bg-click-primaryYellow">
+                            <p class="text-center text-5xl underline underline-offset-1 pt-10">Contact</p>
+                            <form>
+                                <div class="pl-10 text-xl pt-10">Name:</div>
+                                <div class="pl-10 text-xl pt-40">Email:</div>
+                            </form>
+                        </div>
                 </div>
             </div>
 
