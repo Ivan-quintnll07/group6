@@ -70,16 +70,15 @@
 
 
             <div class="absolute top-60 left-10">
-                <p class="text-5xl font-bold text-gray-800 mt-14">Nuestra historia</p>
+                <p class="text-5xl font-bold text-gray-800 mt-14 pl-6">Nuestra historia</p>
+                <p class="text-base font-bold text-gray-800 w-96 mt-6 mt-10 pb-8 text-left pl-6">Click and Save, a website created with the objective to help people saving money by offers, getting the most out of their credit cards and a tool to learn about financial education. Our backend and frontend members used Laravel, CSS, MySQL, Tailwind, and JavaScript (JSS) for the development of the website, which took 7 months to complete and our branding member who used Adobe Ilustrator to create the website desing. This whole process is also thanks to our mentor Ms. Alejandra Quiroa who was in charge of our project.</p>
             </div>
 
-            <div class="absolute bottom-5 right-20">
+            <div class="absolute bottom-5 right-20 animate-bounce">
                 <img src="{{ asset('img/Principal.png') }}" alt="Descripción de la imagen" class="w-70 h-80" />
             </div>
 
             <div class="absolute bottom-60 left-10">
-                <p class="text-sm font-bold text-gray-800 w-96 mt-6 mt-10">Click and Save, a website created with the objective to help people saving money by offers, getting the most out of their credit cards and a tool to learn about financial education. Our backend and frontend members used Laravel, CSS, MySQL, Tailwind, and JavaScript (JSS) for the development of the website, which took 7 months to complete and our branding member who used Adobe Ilustrator to create the website desing. This whole process is also thanks to our mentor Ms. Alejandra Quiroa who was in charge of our project.
-                </p>
             </div>
         </div>
     </div>
@@ -128,14 +127,14 @@
             <div class="h-screen">
                 <div class="grid grid-cols-3">
 
-                    <div class="bg-gray-300 col-start-1 mr-20 h-30 drop-shadow-lg ">
+                    <div class="bg-gray-300 col-start-1 mr-20 h-30 drop-shadow-lg transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110  duration-600">
                         <div class="text-center pt-20 pb-8 font-poppins text-5xl">  Vision </div>
                      <div class="space-y-10 text-center px-8">
                         <p> To be a platform recognized for its reliability, where users turn to for a unique savings experience. Locally known where people have easy access to the promotions offered by credit cards.</p>
                      </div>
                     </div>
 
-                    <div class="bg-gray-300 col-start-2 h-30 drop-shadow-lg">
+                    <div class="bg-gray-300 col-start-2 h-30 drop-shadow-lg transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-600">
                         <div class="text-center pt-20 pb-8 font-poppins text-5xl"> Values </div>
                      <div class="space-y-10 text-center px-8">
                         <p>Integrity: In our website there will always be respect acting in a fair and ethical manner. </p>
@@ -145,28 +144,58 @@
                      </div>
                     </div>
 
-                    <div class="bg-gray-300 col-start-3 ml-20 drop-shadow-lg">
+                    <div class="bg-gray-300 col-start-3 ml-20 drop-shadow-lg transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-600">
                         <div class="text-center pt-20 pb-8 font-poppins text-5xl">  Mission </div>
                      <div class="space-y-10 text-center px-8">
                         <p>To provide the best user experience to consumers through the innovation of knowledge in terms of information and benefits of a credit card through the web site that we will provide, offering reliable information. </p>
                      </div>
                     </div>
-                    {{-- <div class="bg-click-primaryYellow col-start-3 ml-20">hola</div> --}}
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <div class="bg-click-primaryYellow pb-60"><div>
-                        <div class="bg-click-primaryYellow">
-                            <p class="text-center text-5xl underline underline-offset-1 pt-10">Contact</p>
-                            <form>
-                                <div class="pl-10 text-xl pt-10">Name:</div>
-                                <div class="pl-10 text-xl pt-40">Email:</div>
-                            </form>
-                        </div>
+
+            <footer class="bg-click-primaryYellow">
+                <p class="text-center text-5xl pt-8 pb-20 ">Contact</p>
+                <div class="px-20">
+                    <div class="flex flex-wrap justify-between items-start">
+                        <form action="{{ route('contact') }}" method="POST">
+                            @csrf
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 pb-10">
+                                <div>
+                                <label for="first_name" class="block text-sm font-medium space-y-4">Name</label>
+                                <input type="text" name="first_name" id="first_name" class="w-full border-0 border-b-2 border-gray-400 bg-transparent focus:border-click-primaryYellow focus:outline-none" required></input>
+                                </div>
+
+                                <div>
+                                <label for="last_name" class="block text-sm font-medium ">Last name</label>
+                                <input type="text" name="last_name" id="last_name" class="w-full border-0 border-b-2 border-gray-400 bg-transparent focus:border-click-primaryYellow focus:outline-none" required></input>
+                                </div>
+
+                                <div>
+                                <label for="email" class="block text-sm font-medium">Email</label>
+                                <input type="email" name="email" id="email" class="w-full border-0 border-b-2 border-gray-400 bg-transparent focus:border-click-primaryYellow focus:outline-none" required></input>
+                                </div>
+
+                                <div>
+                                <label for="cellphone" class="block text-sm font-medium">Cellphone</label>
+                                <input type="text" name="cellphone" id="cellphone" class="w-full border-0 border-b-2 border-gray-400 bg-transparent focus:border-click-primaryYellow focus:outline-none" required></input>
+                                </div>
+
+                                <div class="absolute right-40">
+                                <label for="comments" class="block text-sm font-medium">Send us a message...</label>
+                                <input name="comments" id="comments" rows="4" class="w-80 border-0 border-b-2 border-gray-400 bg-transparent focus:border-click-primaryYellow focus:outline-none" required></input>
+                                </div>
+
+                                <div class="flex absolute right-40 pt-20">
+                                <button type="submit" class="w-60 border-2 text-3xl border-slate-900 bg-transparent text-black py-2 px-2 transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-600">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
                 </div>
-            </div>
+            </footer>
 
                 </div>
             </div>
