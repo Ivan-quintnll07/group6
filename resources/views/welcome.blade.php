@@ -34,7 +34,7 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide ">
-                        <img src="{{ asset('img/creditCard2.jpg') }}" alt="Slide 1" />
+                        <img src="{{ asset('img/creditCard2.jpg') }}"alt="Slide 1" />
                     </div>
                     <div class="swiper-slide">
                         <img src="{{ asset('img/creditCard1.jpg') }}"  alt="Slide 2" />
@@ -48,8 +48,8 @@
                     <div class="swiper-slide">
                         <img src="{{ asset('img/creditCard5.jpg') }}"  alt="Slide 5" />
                     </div>
-                    <div class="swiper-slide>
-                        <img src="{{ asset('img/creditCard6.jpg') }} alt="Slide 6" />
+                    <div class="swiper-slide">
+                        <img src="{{ asset('img/creditCard6.jpg') }}" alt="Slide 6" />
                     </div>
                     <div class="swiper-slide">
                         <img src="{{ asset('img/creditCard7.jpg') }}"  alt="Slide 7" />
