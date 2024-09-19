@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Bank;
 use App\Models\Card;
 
+
 Route::get('/login', function () {
     return view('users.login');
 })->name('login');
@@ -41,6 +42,3 @@ Route::get('/addCard', function () {
         'CardType' =>Card::all(),
     ]);
 });
-
-
-

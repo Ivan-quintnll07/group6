@@ -1,8 +1,10 @@
 <?php
 
 use App\Models\Promotion;
+use Carbon\Factory;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/signup', function () {
     return view('users.signup');
@@ -14,9 +16,7 @@ Route::get('/home', function () {
     ]);
 });
 
-Route::get('/offer', function (){
-    return view('offers.offer', [
-        'offers' => Promotion::all()
-    ]);
+Route::get('/principal', function () {
+    return view ('users.principal');
 });
 
