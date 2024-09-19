@@ -10,12 +10,11 @@
 
             <div class="absolute flex items-center justify-start h-full p-8 opacity-100 text-white">
                 <div class="p-8 rounded-lg text-center max-w-lg">
-                    <h1 class="text-2xl text-justify mb-4">¿Listo para ahorrar dinero? Únete a "Click & Save" hoy mismo y
-                        consigue las mejores ofertas de tarjetas de crédito en un solo lugar. . </h1>
+                    <h1 class="text-2xl text-justify mb-4">Ready to save money? Join "Click & Save" today and get the best credit card deals in one place. </h1>
                     <a href="{{ route('login') }}"
-                        class="text-black text-lg px-4 py-2 underline underline-offset-1">Iniciar sesion</a>
+                        class="text-black text-2xl px-4 py-2 underline underline-offset-1">Login</a>
                     <a href="{{ route('registro') }}"
-                        class="text-black text-lg px-4 py-2 underline underline-offset-1">Registrarse</a>
+                        class="text-black text-2xl px-4 py-2 underline underline-offset-1">Register</a>
                 </div>
             </div>
         </main>
@@ -65,12 +64,12 @@
         <div class="bg-click-primaryYellow text-click-primaryYellow">hola</div>
 
         <div class="relative h-screen">
-            <div class="w-full h-[calc(100vh-125px)]  bg-cover"
-                style="height: 125px; background-image: url({{ asset('img/crediCart.jpg') }})"></div>
+            <div class="w-full h-[calc(100vh-125px)]  bg-cover text-center text-5xl text-white pt-12 font-bold"
+                style="height: 125px; background-image: url({{ asset('img/PP1.jpg') }})"> About us</div>
 
 
             <div class="absolute top-60 left-10">
-                <p class="text-5xl font-bold text-gray-800 mt-14 pl-6">Nuestra historia</p>
+                <p class="text-5xl font-bold text-gray-800 mt-14 pl-6">Our history</p>
                 <p class="text-base font-bold text-gray-800 w-96 mt-6 mt-10 pb-8 text-left pl-6">Click and Save, a website created with the objective to help people saving money by offers, getting the most out of their credit cards and a tool to learn about financial education. Our backend and frontend members used Laravel, CSS, MySQL, Tailwind, and JavaScript (JSS) for the development of the website, which took 7 months to complete and our branding member who used Adobe Ilustrator to create the website desing. This whole process is also thanks to our mentor Ms. Alejandra Quiroa who was in charge of our project.</p>
             </div>
 
@@ -84,7 +83,7 @@
     </div>
     <div class="h-screen">
         <div class="left-2 w-full pt-10">
-            <p class="text-center text-5xl font-bold text-gray-800">Todos los miembros</p>
+            <p class="text-center text-5xl font-bold text-gray-800">All members</p>
         </div>
 
         <div class="grid grid-cols-5 my-10 mx-16 gap-5">
@@ -115,7 +114,7 @@
             <img src="{{ asset('img/sofia.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
             <img src="{{ asset('img/Brandon.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
         </div>
-        {{-- <div class="pl-60 Text-5Xl">Frontend</div> --}}
+        <div class="pl-60 Text-5Xl">Frontend</div>
 
 
         <div class="bg-gray-100">
