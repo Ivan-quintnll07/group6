@@ -13,9 +13,8 @@
                             <video width="550" height="340" controls>
                                 <source src="{{ asset("img/video/Video2.mp4") }}" type="video/mp4">  *se debe cambiar el videoooo*
                              </video>
-                            <h5 class="text-2xl md:text-3xl font-medium mt-3"> Clases de tarjetas</h5>
-                            <p> Este video explica qué es una tarjeta de crédito, cómo funciona y para qué se
-                                utiliza en la vida cotidiana.</p>
+                            <h5 class="text-2xl md:text-3xl font-medium mt-3">: ¡Tarjetas de crédito: ¿Qué son y cómo usarlas responsablemente?</h5>
+                            <p>  El siguiente video muestra lo que es una tarjeta de crédito, también los beneficios que te puede brindar. Hacer uso responsable es clave. Las tarjetas de crédito tienen diferentes ventajas que te pueden ser útil. </p>
 
                         </div>
 
