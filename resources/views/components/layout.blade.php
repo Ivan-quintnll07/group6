@@ -27,6 +27,7 @@
         }
         <style>
             html,
+            html,
     body {
       position: relative;
       height: 100%;
@@ -44,24 +45,42 @@
     .swiper {
       width: 100%;
       height: 100%;
+      background: #000;
     }
 
     .swiper-slide {
-      text-align: center;
       font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
     }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
       height: 100%;
-      object-fit: cover;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
     }
 
+    .swiper-slide .title {
+      font-size: 41px;
+      font-weight: 300;
+    }
+
+    .swiper-slide .subtitle {
+      font-size: 21px;
+    }
+
+    .swiper-slide .text {
+      font-size: 14px;
+      max-width: 400px;
+      line-height: 1.3;
+    }
   </style>
 </head>
     </style>
@@ -81,6 +100,7 @@
     </script>
     <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
     <script>const Calendar = tui.Calendar;</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     @stack('script')
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
