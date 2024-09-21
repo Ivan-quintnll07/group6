@@ -42,7 +42,7 @@ class PromotionSeeder extends Seeder
                 'business' => 'Pizza Hut',
                 'image' => 'pizza_hut.jpg',
                 'logo' => 'pizzahut_logo.png',
-                'title' => 'Pan de pizza (Tu segunda pizza a $5',
+                'title' => 'Pan de pizza (Tu segunda pizza a $5)',
                 'benefit' => 'Obtén tu segunda pizza gigante a $5.',
                 'restriction' => 'Al pagar con tarjeta de Débito o Crédito *Desde el 1 de Mayo al 31*',
                 'category' => 'Restaurante'
