@@ -9,7 +9,7 @@
                 style="background-image: url({{ asset('img/home2.jpg') }})"></section>
 
             <div class="absolute flex items-center justify-start h-full p-8 opacity-100 text-white">
-                <div class="p-8 rounded-lg text-center max-w-lg">
+                <div class="p-8 rounded-lg text-center max-w-lg ">
                     <h1 class="text-2xl text-justify mb-4">Ready to save money? Join "Click & Save" today and get the best credit card deals in one place. </h1>
                     <a href="{{ route('login') }}"
                         class="text-black text-2xl px-4 py-2 underline underline-offset-1">Login</a>
@@ -29,69 +29,24 @@
             <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: 80px;" />
         </div>
 
-        {{-- <div class="swiper-container" style="max-width: 100%; margin: 0 auto; height: 400px; margin-top: -60px;">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide ">
-                        <img src="{{ asset('img/creditCard2.jpg') }}"alt="Slide 1" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/creditCard1.jpg') }}"  alt="Slide 2" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/creditCard3.jpg') }}"  alt="Slide 3" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/creditCard4.jpg') }}"  alt="Slide 4" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/creditCard5.jpg') }}"  alt="Slide 5" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/creditCard6.jpg') }}" alt="Slide 6" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('img/creditCard7.jpg') }}"  alt="Slide 7" />
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-            </div>
-        </div> --}}
-
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
-            <div class="parallax-bg" style="
-                  background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);
-                " data-swiper-parallax="-23%"></div>
+            <div class="parallax-bg" data-swiper-parallax="-23%" style="background-image: url({{ asset('img/Miniatura.jpg') }})"></div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="title" data-swiper-parallax="-300">Slide 1</div>
-                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="title" data-swiper-parallax="-300">Tarjetas de crédito</div>
+                <div class="subtitle" data-swiper-parallax="-200">¿Qué son y cómo usarlas responsablemente?</div>
                 <div class="text" data-swiper-parallax="-100">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                    dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                    laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                    Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                    Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                    tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                    El siguiente video muestra lo que es una tarjeta de crédito, también los beneficios que te puede brindar. Hacer uso responsable es clave. Las tarjetas de crédito tienen diferentes ventajas que te pueden ser útil.
                   </p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="title" data-swiper-parallax="-300">Slide 2</div>
-                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="title" data-swiper-parallax="-300">Conceptos clave</div>
+                <div class="subtitle" data-swiper-parallax="-200"></div>
                 <div class="text" data-swiper-parallax="-100">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                    dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                    laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                    Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                    Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                    tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                    Este video explicará los conceptos clave de una tarjeta de crédito, como las fechas de corte y pago, estado de cuenta,etc
                   </p>
                 </div>
               </div>
@@ -124,9 +79,9 @@
                 style="height: 125px; background-image: url({{ asset('img/PP1.jpg') }})"> About us</div>
 
 
-            <div class="absolute top-60 left-10">
-                <p class="text-5xl font-bold text-gray-800 mt-14 pl-6">Our history</p>
-                <p class="text-base font-bold text-gray-800 w-96 mt-6 mt-10 pb-8 text-left pl-6">Click and Save, a website created with the objective to help people saving money by offers, getting the most out of their credit cards and a tool to learn about financial education. Our backend and frontend members used Laravel, CSS, MySQL, Tailwind, and JavaScript (JSS) for the development of the website, which took 7 months to complete and our branding member who used Adobe Ilustrator to create the website desing. This whole process is also thanks to our mentor Ms. Alejandra Quiroa who was in charge of our project.</p>
+            <div class="text-wrap pl-20 mb-8 w-full">
+                <h3 class="text-6xl font-bold text-gray-800 mt-14 pl-6 text-center pr-14">Our history</h3>
+                <p class="text-xl font-bold text-gray-800 w-1/2 mt-6 mt-10 text-left pl-6 mb-20 size-60 pt-20">Click and Save, a website created with the objective to help people saving money by offers, getting the most out of their credit cards and a tool to learn about financial education. Our backend and frontend members used Laravel, CSS, MySQL, Tailwind, and JavaScript (JSS) for the development of the website, which took 7 months to complete and our branding member who used Adobe Ilustrator to create the website desing. This whole process is also thanks to our mentor Ms. Alejandra Quiroa who was in charge of our project.</p>
             </div>
 
             <div class="absolute bottom-5 right-20 animate-bounce">

@@ -50,17 +50,17 @@
 
     .swiper-slide {
       font-size: 18px;
-      color: #fff;
+      color: #000000;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      padding: 40px 60px;
+      padding: 100px 90px;
     }
 
     .parallax-bg {
       position: absolute;
       left: 0;
       top: 0;
-      width: 130%;
+      width: 100%;
       height: 100%;
       -webkit-background-size: cover;
       background-size: cover;
