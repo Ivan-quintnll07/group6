@@ -1,5 +1,6 @@
 <x-layout>
-    <x-bar></x-bar>
+    <x-bar> </x-bar>
+
 
     <div class="w-full my-8 ">
         <h1 class="text-4xl font-semibold text-center mb-10">Promociones</h1>
@@ -12,7 +13,7 @@
                     image='{{ $offer->image }}'
                     logo='{{ $offer->logo }}'
                     description='{{ $offer->benefit }}'
-                    page='{{ asset("/pages/offer-{$offer->id}.html") }}' />
+                    id='{{ $offer->id }}' />
             @endforeach
         </div>
     </div>

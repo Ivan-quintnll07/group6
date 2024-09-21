@@ -20,3 +20,22 @@ Route::get('/principal', function () {
     return view ('users.principal');
 });
 
+Route::get('/offers', function () {
+    return view ('offers.offer', [
+        'offers' => Promotion::all()
+        
+    ]);
+})->name('offers');
+
+
+
+Route::get('/offers/{promotion}', function (Promotion $promotion) {
+    return view ('users.offersInfo', [
+        'offer' => $promotion
+
+    ]);
+})->name('offerDetails');
+
+
+
+

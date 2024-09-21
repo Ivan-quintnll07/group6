@@ -33,7 +33,7 @@
                 <b><a href="calendar" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Calendario</a></b>
                 <b><a href="addCard" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Agregar Tarjeta</a></b>
                 <b><a href="education" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Educacion </a></b>
-                <b><a href="offer" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Ofertas</a></b>
+                <b><a href="offers" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Ofertas</a></b>
 
                 @endguest
 
@@ -42,7 +42,7 @@
                 <b><a href="calendar" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Calendario</a></b>
                 <b><a href="education" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Educación </a></b>
                 <b><a href="addCard" class="block text-slate-950 hover:text-gray-100 text-xl h-9">Agregar Tarjeta</a></b>
-                <b><a href="offer" class="text-slate-950 hover:text-gray-100 text-xl h-9">Ofertas</a></b>
+                <b><a href="offers" class="text-slate-950 hover:text-gray-100 text-xl h-9">Ofertas</a></b>
                 @endauth
 
 
