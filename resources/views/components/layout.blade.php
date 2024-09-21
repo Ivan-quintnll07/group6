@@ -50,7 +50,7 @@
 
     .swiper-slide {
       font-size: 18px;
-      color: #000000;
+      color: #ffffff;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding: 100px 90px;

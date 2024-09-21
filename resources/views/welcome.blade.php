@@ -30,7 +30,7 @@
         </div>
 
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
-            <div class="parallax-bg" data-swiper-parallax="-23%" style="background-image: url({{ asset('img/Miniatura.jpg') }})"></div>
+            <div class="parallax-bg" data-swiper-parallax="-23%" style="background-image: url({{ asset('img/PP1.jpg') }})"></div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="title" data-swiper-parallax="-300">Tarjetas de crédito</div>
@@ -125,7 +125,7 @@
             <img src="{{ asset('img/sofia.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
             <img src="{{ asset('img/Brandon.jpeg') }}" alt="Descripción de la imagen" class="w-full mx-auto" />
         </div>
-        <div class="pl-60 Text-5Xl">Frontend</div>
+        {{-- <div class="pl-60 Text-5Xl">Frontend</div> --}}
 
 
         <div class="bg-gray-100">
