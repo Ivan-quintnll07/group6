@@ -1,5 +1,5 @@
 <body class="bg-gray-100">
-    <header class="bg-click-primaryYellow p-4 shadow-md flex justify-between items-center">
+    <header class="bg-sky-950 p-4 shadow-md flex justify-between items-center">
         <head>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
           </head>
@@ -22,7 +22,7 @@
         @endguest
     </header>
 
-    <aside class="fixed z-40 inset-y-0 left-0 w-64 bg-click-primaryYellow shadow-md sidebar sidebar-closed" id="sidebar">
+    <aside class="fixed z-40 inset-y-0 left-0 w-64 bg-sky-950 shadow-md sidebar sidebar-closed" id="sidebar">
         <div class="p-4">
             <span class="material-symbols-outlined cursor-pointer" id="closeButton">
                 close
