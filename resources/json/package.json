@@ -2,7 +2,7 @@
     "devDependencies": {
       "serve": "^11.2.0"
     },
-    "main": "index.html",
+    "main": "welcome.blade.php",
     "name": "swiper-parallax",
     "scripts": {
       "build": "echo This is a static template, there is no bundler or bundling involved!",
