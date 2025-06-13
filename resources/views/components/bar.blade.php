@@ -9,14 +9,13 @@
                 menu
             </span>
 
-            <img src="{{ asset('img/logoBlanco.png') }}" width="150" aling="center" class="ml-4">
+            <img src="{{ asset('img/c&c white.png') }}" width="50" aling="center" class="ml-4">
         </div>
 
         @guest
         <nav class="space-x-4">
 
-            <a href="signup" class="text-slate-950	 hover:text-gray-100">Registrarse</a>
-            <a href="login" class="text-slate-950	 hover:text-gray-100">Iniciar Sesión</a>
+          <img src="{{ asset('img/mobile_logo.png') }}" width="45" aling="left" class="ml-4">
 
         </nav>
         @endguest
