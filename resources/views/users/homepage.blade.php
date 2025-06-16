@@ -1,6 +1,6 @@
 <x-layout>
     <div class="flex flex-col h-screen bg-cover bg-center"
-        style="background-image: url('https://www.rrd.com/uploads/thoughts/items/independent-health-upgrades-to-digital-payment-and-distribution-system-healthcare_20230228_pageimage.jpg');">
+        style="background-image: <img src="{{ asset('img/logoBlanco.png') }}" width="150" aling="center" class="ml-4">
 
         <x-bar></x-bar>
 
