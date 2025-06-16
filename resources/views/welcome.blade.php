@@ -2,28 +2,62 @@
     <div class="bg-gray-100 overflow-clip ">
         <x-bar />
 
-        <main class="flex items-center justify-center relative">
+        <main class="relative h-[calc(100vh-50px)] w-full">
+    <!-- Imagen de fondo -->
+    <div class="absolute inset-0 bg-cover bg-center"
+         style="background-image: url('{{ asset('img/welcomemain.png') }}');">
+    </div>
 
-            <section class="h-[calc(100vh-50px)] w-1/2 bg-cover " style="background-image: url({{ asset('img/home1.jpg') }})"></section>
-            <section class="h-[calc(100vh-50px)] w-1/2 bg-cover "
-                style="background-image: url({{ asset('img/home2.jpg') }})"></section>
+    <!-- Capa opcional para oscurecer un poco -->
+    <div class="absolute inset-0 bg-black/20"></div>
 
-            <div class="absolute flex items-center justify-start h-full p-8 opacity-100 text-white">
-                <div class="p-8 rounded-lg text-center max-w-lg ">
-                    <h1 class="text-2xl text-justify mb-4">Ready to save money? Join "Click & Save" today and get the best credit card deals in one place. </h1>
-                    <a href="{{ route('login') }}"
-                        class="text-black text-2xl px-4 py-2 underline underline-offset-1">Login</a>
-                    <a href="{{ route('registro') }}"
-                        class="text-black text-2xl px-4 py-2 underline underline-offset-1">Register</a>
-                </div>
-            </div>
-        </main>
+    <!-- Logo centrado -->
+    <div class="absolute inset-0 flex items-center justify-center z-10">
+        <img src="{{ asset('img/Main.png') }}" class="max-w-[400px] absolute top 1/2 left-16 w-full">
+    </div>
+
+    <!-- Menú lateral derecho -->
+    <div class="absolute top-1/2 right-8 transform -translate-y-1/2 flex flex-col gap-7 z-10 text-2xl text-white text-right">
+        <a href="{{ route('login') }}" class="border-b border-white hover:text-blue-300">Iniciar sesión</a>
+        <a href="{{ route('registro') }}" class="border-b border-white hover:text-blue-300">Registrarse</a>
+    </div>
+</main>
 
 
         <div class="bg-white flex flex-col justify-start pt-16 w-full">
-            <div class="text-center mx-auto mb-8 max-w-5xl mx-auto">
+            <div class="text-center mx-auto mb-8 max-w-5xl">
                 <h2 class="text-5xl mb-4 italic font-thin">"Click and Save: gathering the best deals in one
                     place"</h2>
+                    <div class="w-full">
+    <img src="{{ asset('img/promotionsim.png') }}" alt="Promociones"
+         class="w-[600px] h-[400px] object-cover object-center">
+    <div class="absolute inset-0 flex items-center justify-center">
+        <h2 class="text-white text-6xl font-bold drop-shadow-md">Promociones</h2>
+    </div>
+</div>
+<!-- Grid de promociones -->
+<div class="py-12 px-6 bg-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        @for ($i = 0; $i < 6; $i++)
+            <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col items-center">
+                <img src="{{ asset('img/promo' . ($i+1) . '.jpg') }}" alt="Promo {{ $i+1 }}" class="w-full h-48 object-cover">
+                <div class="p-4 text-center">
+                    <p class="text-lg font-semibold mb-2">20% de descuento</p>
+                    <button class="bg-click-primaryCyan text-white px-4 py-2 rounded-full hover:bg-click-secondaryCyan transition">
+                        Ver más
+                    </button>
+                </div>
+                <div class="pb-4">
+                    <i class="far fa-heart text-gray-500 hover:text-red-500 text-2xl cursor-pointer"></i>
+                </div>
+            </div>
+        @endfor
+    </div>
+</div>"
+                        </div>
+
+
+                    </div>
             </div>
 
             <hr class="border-t-2 border-black mx-auto w-full" style="margin-top: 80px;" />
@@ -81,7 +115,7 @@
 
             <div class="text-wrap pl-20 mb-8 w-full">
                 <h3 class="text-6xl font-bold text-gray-800 mt-14 pl-6 text-center pr-14">Our history</h3>
-                <p class="text-xl font-bold text-gray-800 w-1/2 mt-6 mt-10 text-left pl-6 mb-20 size-60 pt-20">Click and Save, a website created with the objective to help people saving money by offers, getting the most out of their credit cards and a tool to learn about financial education. Our backend and frontend members used Laravel, CSS, MySQL, Tailwind, and JavaScript (JSS) for the development of the website, which took 7 months to complete and our branding member who used Adobe Ilustrator to create the website desing. This whole process is also thanks to our mentor Ms. Alejandra Quiroa who was in charge of our project.</p>
+                <p class="text-xl font-bold text-gray-800 w-1/2 mt-6 text-left pl-6 mb-20 size-60 pt-20">Click and Save, a website created with the objective to help people saving money by offers, getting the most out of their credit cards and a tool to learn about financial education. Our backend and frontend members used Laravel, CSS, MySQL, Tailwind, and JavaScript (JSS) for the development of the website, which took 7 months to complete and our branding member who used Adobe Ilustrator to create the website desing. This whole process is also thanks to our mentor Ms. Alejandra Quiroa who was in charge of our project.</p>
             </div>
 
             <div class="absolute bottom-5 right-20 animate-bounce">
@@ -105,7 +139,7 @@
         </div>
 
         <div class="grid grid-cols-5">
-            {{-- <p class="text-5xl col-span-2 text-center col-span-4">Backend</p> --}}
+
         </div>
 
 
@@ -137,14 +171,14 @@
             <div class="h-screen">
                 <div class="grid grid-cols-3">
 
-                    <div class="bg-gray-300 col-start-1 mr-20 h-30 drop-shadow-lg transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110  duration-600">
+                    <div class="col-start-1 mr-20 h-30 drop-shadow-lg transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110  duration-600">
                         <div class="text-center pt-20 pb-8 font-poppins text-5xl">  Vision </div>
                      <div class="space-y-10 text-center px-8">
                         <p> To be a platform recognized for its reliability, where users turn to for a unique savings experience. Locally known where people have easy access to the promotions offered by credit cards.</p>
                      </div>
                     </div>
 
-                    <div class="bg-gray-300 col-start-2 h-30 drop-shadow-lg transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-600">
+                    <div class="col-start-2 h-30 drop-shadow-lg transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-600">
                         <div class="text-center pt-20 pb-8 font-poppins text-5xl"> Values </div>
                      <div class="space-y-10 text-center px-8">
                         <p>Integrity: In our website there will always be respect acting in a fair and ethical manner. </p>
@@ -154,7 +188,7 @@
                      </div>
                     </div>
 
-                    <div class="bg-gray-300 col-start-3 ml-20 drop-shadow-lg transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-600">
+                    <div class="col-start-3 ml-20 drop-shadow-lg transition ease-in delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 duration-600">
                         <div class="text-center pt-20 pb-8 font-poppins text-5xl">  Mission </div>
                      <div class="space-y-10 text-center px-8">
                         <p>To provide the best user experience to consumers through the innovation of knowledge in terms of information and benefits of a credit card through the web site that we will provide, offering reliable information. </p>
