@@ -19,3 +19,4 @@
         <a href="{{ route('offerDetails', $id) }}" class="mt-4 inline-block px-6 py-2 items-center justify-center bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300">Ver Más</a>
     </div>
 </div>
+
