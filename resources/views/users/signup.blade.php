@@ -1,31 +1,57 @@
-<x-layout>
-    <x-bar/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <div class="flex flex-col h-screen bg-cover bg-center bg-['url({{asset('img/bg/registrarse.jpg')}})']"
-            style="background-image: url('img/bg/registrarse.jpg')"
-        >
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Click & Save</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex font-sans">
 
-        <div class="flex justify-center items-center h-screen">
-            <div class="backdrop-blur-sm bg-white/30 rounded-md">
-                <h1 class="text-6   x1 block text-center font-poppins"> <i class="fa-regular fa-user"></i>Registrate</h1>
-                <hr class="mt-3">
-                <form action="/register" method="POST" class="bg-gray shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                    @csrf
-                    <span class="material-symbols-outlined">
-                        person
-                        </span>
-                    <x-input name="name" type="text">Nombre completo</x-input>
-                    <span class="material-symbols-outlined">
-                        mail
-                        </span>
-                    <x-input name="email" type="text">Email</x-input>
-                    <span class="material-symbols-outlined">
-                        key
-                        </span>
-                    <x-input name="password" type="password">Password</x-input>
-                    <x-primary-button>Crear cuenta</x-primary-button>
-                </form>
-            </div>
-        </div>
+  <!-- Lado izquierdo: Formulario -->
+  <div class="w-1/2 flex flex-col justify-center items-center px-12">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2 mb-6">
+      <div class="text-2xl font-bold text-blue-600">●</div>
+      <h1 class="text-2xl font-bold text-black">Click <span class="text-sky-400">& Save</span></h1>
     </div>
-</x-layout>
+
+    <!-- Título -->
+    <h2 class="text-2xl font-bold mb-1">¡Bienvenido!</h2>
+    <p class="mb-6 text-sm">Crea tu cuenta aquí</p>
+
+    <!-- Formulario -->
+    <form class="w-full max-w-md space-y-3">
+      <input class="w-full bg-gray-200 p-3 rounded" type="text" placeholder="Usuario"/>
+      <input class="w-full bg-gray-200 p-3 rounded" type="email" placeholder="Email"/>
+      <input class="w-full bg-gray-200 p-3 rounded" type="password" placeholder="Contraseña"/>
+      <input class="w-full bg-gray-200 p-3 rounded" type="text" placeholder="Proveedor de tarjeta"/>
+      <input class="w-full bg-gray-200 p-3 rounded" type="text" placeholder="Tipo de tarjeta"/>
+      <input class="w-full bg-gray-200 p-3 rounded" type="date" placeholder="Fecha de corte"/>
+      <input class="w-full bg-gray-200 p-3 rounded" type="date" placeholder="Fecha de pago"/>
+      <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded mt-2">Registrarse</button>
+    </form>
+
+    <!-- Enlace a iniciar sesión -->
+    <p class="mt-6 text-sm">
+      ¿Ya tienes una cuenta? <a href="#" class="font-bold">Iniciar Sesión</a>
+    </p>
+  </div>
+
+  <!-- Lado derecho: Imagen con logo -->
+  <div class="w-1/2 relative">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="w-full h-full object-cover" alt="Fondo con laptop"/>
+
+    <!-- Logo superpuesto -->
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <h1 class="text-6xl font-bold text-black">
+        <span class="text-blue-600">C</span>lick<br/>
+        <span class="text-black">&</span> <span class="text-sky-400">Save</span>
+      </h1>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
