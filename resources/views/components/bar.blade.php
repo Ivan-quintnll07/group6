@@ -5,7 +5,7 @@
           </head>
 
         <div class="flex items-center">
-            <span class="material-symbols-outlined cursor-pointer" id="menuButton">
+            <span class="material-symbols-outlined cursor-pointer" id="menuButton" style="color: white">
                 menu
             </span>
 
