@@ -20,10 +20,14 @@ Route::get('/calendar', function () {
 Route::get('/expenseRecord', function () {
     return view('expenseRecord');
 });
-    
+
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/perfil', function () {
+    return view('components.perfil');
 });
 
 Route::get('/education', function () {

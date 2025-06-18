@@ -15,7 +15,9 @@
         @guest
         <nav class="space-x-4">
 
-          <img src="{{ asset('img/mobile_logo.png') }}" width="45" aling="left" class="ml-4">
+          <span flex itemas-center class="text-white">
+            <i  class="fas fa-user-plus"></i>
+            <a href="perfil" class="text-white hover:text-gray-300">Perfil</a>
 
         </nav>
         @endguest

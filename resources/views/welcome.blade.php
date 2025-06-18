@@ -1,5 +1,4 @@
 <x-layout>
-    <div class="bg-gray-100 overflow-clip ">
         <x-bar> </x-bar>
 
         <main class="relative h-[calc(100vh-50px)] w-full">

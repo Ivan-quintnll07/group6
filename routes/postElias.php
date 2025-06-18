@@ -23,7 +23,7 @@ Route::get('/principal', function () {
 Route::get('/offers', function () {
     return view ('offers.offer', [
         'offers' => Promotion::all()
-        
+
     ]);
 })->name('offers');
 
@@ -35,6 +35,8 @@ Route::get('/offers/{promotion}', function (Promotion $promotion) {
 
     ]);
 })->name('offerDetails');
+
+
 
 
 
