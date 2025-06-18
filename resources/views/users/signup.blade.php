@@ -1,31 +1,46 @@
 <x-layout>
     <x-bar/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <div class="flex flex-col h-screen bg-cover bg-center bg-['url({{asset('img/bg/registrarse.jpg')}})']"
-            style="background-image: url('img/bg/registrarse.jpg')"
-        >
 
-        <div class="flex justify-center items-center h-screen">
-            <div class="backdrop-blur-sm bg-white/30 rounded-md">
-                <h1 class="text-6   x1 block text-center font-poppins"> <i class="fa-regular fa-user"></i>Registrate</h1>
-                <hr class="mt-3">
-                <form action="/register" method="POST" class="bg-gray shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                    @csrf
-                    <span class="material-symbols-outlined">
-                        person
-                        </span>
-                    <x-input name="name" type="text">Nombre completo</x-input>
-                    <span class="material-symbols-outlined">
-                        mail
-                        </span>
-                    <x-input name="email" type="text">Email</x-input>
-                    <span class="material-symbols-outlined">
-                        key
-                        </span>
-                    <x-input name="password" type="password">Password</x-input>
-                    <x-primary-button>Crear cuenta</x-primary-button>
-                </form>
-            </div>
+    <div class="flex h-screen font-sans">
+        {{-- Lado Izquierdo: Formulario --}}
+        <div class="w-1/2 flex flex-col justify-center items-center px-10 bg-white">
+
+            <h2 class="text-2xl font-bold mb-1">¡Bienvenido!</h2>
+            <p class="text-sm mb-6">Crea tu cuenta aquí</p>
+
+
+            <!-- Formulario -->
+            <form method="POST" action="/register" class="w-full max-w-md space-y-3">
+                @csrf
+                <x-input name="name" type="text">Usuario</x-input>
+                <x-input name="email" type="email">Email</x-input>
+                <x-input name="password" type="password">Contraseña</x-input>
+                <x-input name="card_provider" type="text">Proveedor de tarjeta</x-input>
+                <x-input name="card_type" type="text">Tipo de tarjeta</x-input>
+                <x-input name="cut_date" type="date">Fecha de corte</x-input>
+                <x-input name="pay_date" type="date">Fecha de pago</x-input>
+
+                <x-primary-button class="w-full bg-blue-900 text-white py-3 rounded mt-2">
+
+                </x-primary-button>
+            </form>
+
+            <p class="mt-6 text-sm">
+                ¿Ya tienes una cuenta?
+                <a href="{{ route('login') }}" class="font-bold">Iniciar Sesión</a>
+            </p>
+        </div>
+
+        {{-- Lado Derecho: Imagen de fondo con logo --}}
+        <div class="w-1/2 relative">
+            <img src="{{ asset('img/bg/registrarse.jpg') }}" alt="Fondo Click & Save"
+                 class="w-full h-full object-cover"/>
+
+            <!-- Logo centrado -->
+            <div class="absolute inset-0 flex items-center justify-center z-10">
+        <img src="{{ asset('img/Main.png') }}" class="max-w-[300px] absolute top 1/2 left-20 w-full">
+
+    </div>
         </div>
     </div>
 </x-layout>
