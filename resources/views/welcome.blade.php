@@ -15,7 +15,7 @@
         <img src="{{ asset('img/Main.png') }}" class="max-w-[550px] absolute top 1/2 left-16 w-full pl-32">
     </div>
 
-    <!-- Menú lateral derecho -->
+ 
     <div class="absolute top-1/2 right-8 transform -translate-y-1/2 flex flex-col gap-7 z-10 text-2xl text-white text-center pr-20 pl-20 pt-[90px]  pb-[90px]  mr-72 color: trans" style=" background-color: #003f5d95;">
         <a href="{{ route('login') }}" class="border-b border-white hover:text-blue-300">Iniciar sesión</a>
         <a href="{{ route('registro') }}" class="border-b border-white hover:text-blue-300">Registrarse</a>
@@ -34,7 +34,7 @@
 
 
 </div class="">
-<!-- Grid de promociones -->
+
         <div class="py-12 px-6 bg-white pb-14">
             <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 @for ($i = 0; $i < 6; $i++)
