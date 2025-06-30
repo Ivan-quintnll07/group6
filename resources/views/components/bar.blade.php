@@ -21,6 +21,16 @@
 
         </nav>
         @endguest
+
+        @auth
+        <nav class="space-x-4">
+
+          <span flex itemas-center class="text-white">
+            <i  class="fas fa-user-plus"></i>
+            <a href="perfil" class="text-white hover:text-gray-300">Perfil</a>
+
+        </nav>
+        @endauth
     </header>
 
     <aside class="fixed z-40 inset-y-0 left-0 w-64 shadow-xl sidebar sidebar-closed" id="sidebar" style="background-image: url('img/xiaoxiao.jpg'); background-size: cover; background-position: center; backdrop-filter: blur(8px); background-color: rgba(0,0,0,0.4);">
@@ -50,8 +60,6 @@
             <b><a href="education" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-graduation-cap"></i> Educación</a></b><br>
 
-            <b><a href="offers" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
-                <i class="fas fa-tags"></i> Ofertas</a></b><br>
             @endguest
 
             @auth
@@ -67,8 +75,7 @@
             <b><a href="addCard" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
                 <i class="fas fa-credit-card"></i> Agregar Tarjeta</a></b><br>
 
-            <b><a href="offers" style="display: inline-block; color: #f4f5f7; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
-                <i class="fas fa-tags"></i> Ofertas</a></b><br>
+
             @endauth
         </nav>
     </div>
