@@ -1,7 +1,7 @@
 <x-layout>
     <x-bar> </x-bar>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <div class="grid grid-cols-1 md:grid-cols-2 h-screen">
 
         <!-- Columna izquierda: Imagen -->
@@ -28,7 +28,7 @@
                     <!-- Usuario -->
                     <div>
                         <label class="block text-gray-700">Email o usuario</label>
-                        <input type="text" name="name" required
+                        <input type="text" name="email" required
                             class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-click-primaryCyan focus:outline-none">
                     </div>
 
@@ -45,7 +45,8 @@
                             <input type="checkbox" class="form-checkbox text-click-primaryCyan">
                             <span class="ml-2 text-gray-600 text-sm">Recuérdame</span>
                         </label>
-                        <a href="#" class="text-sm text-click-primaryCyan hover:underline">¿Olvidaste tu contraseña?</a>
+                        <a href="#" class="text-sm text-click-primaryCyan hover:underline">¿Olvidaste tu
+                            contraseña?</a>
                     </div>
 
                     <!-- Botón -->
@@ -62,4 +63,5 @@
             </div>
         </div>
     </div>
+ 
 </x-layout>

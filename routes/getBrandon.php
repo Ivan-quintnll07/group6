@@ -27,7 +27,9 @@ Route::get('/', function () {
 });
 
 Route::get('/perfil', function () {
-    return view('components.perfil');
+    return view('components.perfil', [
+        'user' => Auth::user(),
+    ]);
 });
 
 Route::get('/education', function () {

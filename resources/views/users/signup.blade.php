@@ -20,9 +20,7 @@
                 <x-input name="cut_date" type="date">Fecha de corte</x-input>
                 <x-input name="pay_date" type="date">Fecha de pago</x-input>
 
-                <x-primary-button class="w-full bg-blue-900 text-white py-3 rounded mt-2">
-
-                </x-primary-button>
+                <x-primary-button class="w-full bg-blue-900 text-white py-3 rounded mt-2"> </x-primary-button>
             </form>
 
             <p class="mt-6 text-sm">
@@ -40,7 +38,7 @@
             <div class="absolute inset-0 flex items-center justify-center z-10">
         <img src="{{ asset('img/Main.png') }}" class="max-w-[300px] absolute top 1/2 left-20 w-full">
 
-    </div>
+            </div>
         </div>
     </div>
 </x-layout>
