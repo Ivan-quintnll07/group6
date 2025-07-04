@@ -1,7 +1,5 @@
 <x-layout>
-
     <x-bar> </x-bar>
-
 
     <main class="relative h-[calc(100vh-50px)] w-full">
     <div class="absolute inset-0 bg-cover bg-center"
@@ -9,28 +7,7 @@
     </div>
 
 
-
-    <div class="absolute inset-0 flex items-center justify-center z-10">
-        <img src="{{ asset('img/Main.png') }}" class="max-w-[550px] absolute top 1/2 left-16 w-full pl-32">
-    </div>
-
-
-    <div class="absolute top-1/2 right-8 transform -translate-y-1/2 flex flex-col gap-7 z-10 text-2xl text-white text-center pr-20 pl-20 pt-[90px]  pb-[90px]  mr-72 color: trans" style=" background-color: #003f5d95;">
-        <a href="{{ route('login') }}" class="border-b border-white hover:text-blue-300">Iniciar sesión</a>
-        <a href="{{ route('registro') }}" class="border-b border-white hover:text-blue-300">Registrarse</a>
-         <a href="{{ route('registro') }}" class="border-b border-white hover:text-blue-300">Inicio</a>
-    </div>
 </main>
-
-<div class="relative w-full h-[400px]">
-    <img src="{{ asset('img/promotionsim.png') }}" alt="Promociones"
-         class="w-full h-full object-cover pt-12 pr-14 pl-14 pb-14">
-    <h2 class="absolute top-2/4 left-2/4 transform -translate-x-1/2 -translate-y-1/2 text-white text-[120px] font-bold drop-shadow-md">
-        Promociones
-    </h2>
-</div>
-
-
 
 </div class="">
         <div class="py-12 px-6 bg-white pb-14">

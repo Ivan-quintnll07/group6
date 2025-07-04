@@ -10,7 +10,7 @@ Route::get('/signup', function () {
     return view('users.signup');
 })->name('registro');
 
-Route::get('/home', function () {
+Route::get('/homepage', function () {
     return view('users.homepage', [
         'info' => Auth::user()
     ]);

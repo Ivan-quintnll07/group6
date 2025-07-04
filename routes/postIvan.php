@@ -12,7 +12,6 @@ Route::post('/cards/create', [CardController::class, 'create']);
 Route::post('/contact', [ContactController::class, 'store'])->name('contact');
 
 
-
 Route::get('cards/add', function () {
     return view('cards.form', [
         'banks' => Bank::all(),

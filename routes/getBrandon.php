@@ -34,6 +34,14 @@ Route::get('/education', function () {
     return view('education');
 });
 
+Route::get('/principal', function () {
+    return view('principal');
+})->middleware('auth');
+
+Route::get('/favoritos', function () {
+    return view('favoritos');
+});
+
 Route::get('/addCard', function () {
     return view('cards/addCard', [
         'banks' => Bank::all(),

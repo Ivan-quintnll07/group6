@@ -11,12 +11,12 @@ class UserController extends Controller
     public function login(Request $request) {
         $loginCredentials = $request->validate([
             'email'=>'required',
-            'password'=>'required|min:8',
+            'password'=>'required|min:3',
         ]);
 
        if(Auth::attempt($loginCredentials)) {
             $request->session()->regenerate();
-            return redirect('/home');
+            return redirect('/welcome');
        }
 
        return back()->withErrors([]);
@@ -34,7 +34,7 @@ class UserController extends Controller
         if($user){
             Auth::login($user);
             $request->session()->regenerate();
-            return redirect('/home');
+            return redirect('/principal');
         }
 
         return back()->withErrors([]);
