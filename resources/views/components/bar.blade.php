@@ -5,12 +5,14 @@
           </head>
 
         <div class="flex items-center">
-            <span class="material-symbols-outlined cursor-pointer" id="menuButton" style="color: white">
-                menu
-            </span>
-
-            <img src="{{ asset('img/c&c white.png') }}" width="50" aling="center" class="ml-4">
-        </div>
+    <img
+      id="menuButton"
+      src="{{ asset('img/c&c white.png') }}"
+      width="50"
+      class="cursor-pointer"
+      alt="Click&Save"
+    >
+</div>
 
         @guest
         <nav class="space-x-4">
