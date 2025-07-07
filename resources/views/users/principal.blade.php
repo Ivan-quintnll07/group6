@@ -6,7 +6,7 @@
 <body class="bg-gray-100">
     <x-layout>
         <x-bar></x-bar>
-
+ 
         <main class="relative h-screen bg-cover bg-center" style="background-image: url('{{ asset('img/tarjetahombre.png') }}')">
 
             <!-- Logo superior izquierdo -->

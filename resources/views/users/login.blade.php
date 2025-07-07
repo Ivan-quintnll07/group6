@@ -1,41 +1,67 @@
 <x-layout>
     <x-bar> </x-bar>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <div class="flex flex-col h-screen bg-cover bg-center bg-['url({{asset('img/bg/login.jpg')}})']"
-    style="background-image: url('img/bg/thumbnail_iniciar sesion.jpg')"
-    >
-        <div class="flex justify-center items-center h-screen">
-            <div class="backdrop-blur-sm bg-white/30 rounded-md px-6 py-6">
-                <h1 class="text-6xl block text-center font-poppins"><i class="fa-regular fa-user"></i> Iniciar Sesión</h1>
-                <hr class="mt-3">
-                <form action="/login" method="POST" class="bg-gray shadow-md space-y-4 rounded px-8 pt-6 pb-8 mb-4">
-                    @csrf
-                    <div class="flex items-center">
-                    <span class="material-symbols-outlined">
-                        person
-                        </span>
-                        <x-input name="name" type="text">Nombre completo</x-input>
-                    </div>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <div class="grid grid-cols-1 md:grid-cols-2 h-screen">
 
-                    <div class="flex items-center">
-                    <span class="material-symbols-outlined">
-                        key
-                    </span>
-                    <x-input name="password" type="password">Contraseña</x-input>
+        <!-- Columna izquierda: Imagen -->
+        <div class="hidden md:block">
+            <img src="{{ asset('img/newlogin.png') }}" alt="Login" class="w-full h-full object-cover">
+        </div>
 
-                    </div>
+        <!-- Columna derecha: Formulario -->
+        <div class="flex items-center justify-center bg-white px-8">
+            <div class="w-full max-w-md">
 
-                    <label class="flex items-center mt-2">
-                        <input type="checkbox" class="form-checkbox">
-                        <span class="ml-2 text-gray-600">Recuérdame</span>
-                    </label>
-                    <x-primary-button>Crear cuenta</x-primary-button>
-                </form>
-                <div class="flex justify-center mt-4">
-                    <a href="#" class="text-blue-500 hover:underline"><i
-                            class="fa-regular fa-question-circle"></i> ¿Olvidaste tu contraseña?</a>
+                <!-- Logo -->
+                <div class="flex justify-center mb-6">
+                    <img src="{{ asset('img/Logo largoxd.png') }}" alt="Click&Save Logo" class="h-10">
                 </div>
+
+                <!-- Texto -->
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Hola,</h2>
+                <h3 class="text-xl text-gray-600 mb-6">Bienvenido de nuevo</h3>
+
+                <form action="/login" method="POST" class="space-y-4">
+                    @csrf
+
+                    <!-- Usuario -->
+                    <div>
+                        <label class="block text-gray-700">Email o usuario</label>
+                        <input type="text" name="email" required
+                            class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-click-primaryCyan focus:outline-none">
+                    </div>
+
+                    <!-- Contraseña -->
+                    <div>
+                        <label class="block text-gray-700">Contraseña</label>
+                        <input type="password" name="password" required
+                            class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-click-primaryCyan focus:outline-none">
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-click-primaryCyan">
+                            <span class="ml-2 text-gray-600 text-sm">Recuérdame</span>
+                        </label>
+                        <a href="#" class="text-sm text-click-primaryCyan hover:underline">¿Olvidaste tu
+                            contraseña?</a>
+                    </div>
+
+                    <!-- Botón -->
+                    <button type="submit"
+                        class="w-full bg-click-primaryCyan hover:bg-click-secondaryCyan text-white font-bold py-2 rounded-md transition">
+                        Iniciar Sesión
+                    </button>
+                </form>
+
+                <p class="text-sm text-center mt-4">
+                    ¿No tienes una cuenta?
+                    <a href="#" class="text-click-primaryCyan font-semibold hover:underline">Crear cuenta</a>
+                </p>
             </div>
         </div>
     </div>
+ 
 </x-layout>
