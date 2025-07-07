@@ -26,6 +26,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/perfil', function () {
     return view('components.perfil', [
         'user' => Auth::user(),
@@ -49,4 +50,13 @@ Route::get('/addCard', function () {
         'banks' => Bank::all(),
         'CardType' =>Card::all(),
     ]);
+
+    });
+
+Route::get('/changeCard', function () {
+    return view('cards/changeCard', [
+        'banks' => Bank::all(),
+        'CardType' =>Card::all(),
+    ]);
+
 });
