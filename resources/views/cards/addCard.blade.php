@@ -66,7 +66,7 @@
 
         <!-- Imagen decorativa inferior -->
         <div class="w-full mt-10">
-            <img src="{{ asset('img/Tarjetas de Credito.png') }}" alt="Tarjetas de Crédito" class="w-full object-cover">
+            <img src="{{ asset('img/Tarjetas de Crédito.png') }}" alt="Tarjetas de Crédito" class="w-full object-cover">
         </div>
     </form>
 </x-layout>
