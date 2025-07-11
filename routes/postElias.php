@@ -4,6 +4,7 @@ use App\Models\Promotion;
 use Carbon\Factory;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PromotionController;
 
 
 Route::get('/signup', function () {
@@ -27,7 +28,9 @@ Route::get('/offers', function () {
     ]);
 })->name('offers');
 
+Route::get('/offers', [PromotionController::class, 'index'])->name('offers');
 
+Route::get('/promociones', [PromotionController::class, 'index'])->name('promociones');
 
 Route::get('/offers/{promotion}', function (Promotion $promotion) {
     return view ('users.offersInfo', [

@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string("logo")->nullable();
             $table->string("restriction", 600)->nullable();
             $table->string("category");
-            $table->timestamp('start');
-            $table->timestamp('end');
+            $table->timestamp('start')->nullable();
+            $table->timestamp('end')->nullable();
             $table->timestamps();
         });
     }
