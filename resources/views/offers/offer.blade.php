@@ -7,7 +7,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-8">
             @foreach ($offers as $offer)
-                <x-card-offer
+                <x-card-offer 
                     title='{{ $offer->title }}'
                     price='{{ $offer->price }}'
                     image='{{ $offer->image }}'
