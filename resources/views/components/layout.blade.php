@@ -83,8 +83,7 @@
     }
   </style>
 </head>
-    </style>
-</head>
+
 
 <body class="font-poppins">
     {{ $slot }}

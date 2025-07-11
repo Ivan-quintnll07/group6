@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
     <x-bar> </x-bar>
 <head>
   <meta charset="UTF-8">
