@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\CardType;
 use App\Models\Promotion;
 use Illuminate\Support\Facades\Route;
 use App\Models\Bank;
@@ -47,6 +48,6 @@ Route::get('/favoritos', function () {
 Route::get('/addCard', function () {
     return view('cards/addCard', [
         'banks' => Bank::all(),
-        'CardType' =>Card::all(),
+        'CardType' =>CardType::all(),
     ]);
 });

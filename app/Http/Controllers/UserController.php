@@ -16,7 +16,7 @@ class UserController extends Controller
 
        if(Auth::attempt($loginCredentials)) {
             $request->session()->regenerate();
-            return redirect('/welcome');
+            return redirect('/principal');
        }
 
        return back()->withErrors([]);

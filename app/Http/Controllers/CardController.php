@@ -21,9 +21,9 @@ class CardController extends Controller
             'card_type_id' => 'required|exists:card_types,id',
             'user_id' => 'required|exists:users,id'
         ]);
-        
+
         if (Card::create($cardData)) {
-            return redirect('/');
+            return redirect('/principal');
         }
 
         return back()->withErrors([]);

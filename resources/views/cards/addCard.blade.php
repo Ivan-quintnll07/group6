@@ -47,8 +47,8 @@
                     <label for="card_type_id" class="text-center font-medium mb-1">Tipo de tarjeta</label>
                     <select name="card_type_id" id="card_type_id"
                         class="border border-gray-300 bg-gray-100 px-4 py-2 rounded text-center focus:outline-none">
-                        @foreach ($CardType as $Tarjeta)
-                            <option value="{{ $Tarjeta->id }}">{{ $Tarjeta->type }}</option>
+                        @foreach ($CardType as $tarjeta)
+                            <option value="{{ $tarjeta->id }}">{{ $tarjeta->type }}</option>
                         @endforeach
                     </select>
                 </div>

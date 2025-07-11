@@ -45,23 +45,23 @@
                             <input type="checkbox" class="form-checkbox text-click-primaryCyan">
                             <span class="ml-2 text-gray-600 text-sm">Recuérdame</span>
                         </label>
-                        <a href="#" class="text-sm text-click-primaryCyan hover:underline">¿Olvidaste tu
+                        <a href="/signup" class="text-sm text-click-primaryCyan hover:underline">¿Olvidaste tu
                             contraseña?</a>
                     </div>
 
                     <!-- Botón -->
                     <button type="submit"
-                        class="w-full bg-click-primaryCyan hover:bg-click-secondaryCyan text-white font-bold py-2 rounded-md transition">
+                        class="w-full bg-click-primaryCyan hover:bg-click-secondaryCyan text-black font-bold py-2 rounded-md transition">
                         Iniciar Sesión
                     </button>
                 </form>
 
                 <p class="text-sm text-center mt-4">
                     ¿No tienes una cuenta?
-                    <a href="#" class="text-click-primaryCyan font-semibold hover:underline">Crear cuenta</a>
+                    <a href="/signup" class="text-click-primaryCyan font-semibold hover:underline">Crear cuenta</a>
                 </p>
             </div>
         </div>
     </div>
- 
+
 </x-layout>
