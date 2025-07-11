@@ -1,8 +1,8 @@
 <x-layout>
     <div class="flex flex-col h-screen bg-cover bg-center"
-        style="background-image: <img src="{{ asset('img/logoBlanco.png') }}" width="150" aling="center" class="ml-4">
+        style="background-image: <img src="{{ asset('img/logoBlanco.png') }} width="150" aling="center" class="ml-4">
 
-        <x-bar></x-bar> 
+        <x-bar></x-bar>
 
 
         <div class="flex-grow flex items-center justify-center">

@@ -4,13 +4,14 @@ use App\Models\Promotion;
 use Carbon\Factory;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PromotionController;
 
 
 Route::get('/signup', function () {
     return view('users.signup');
 })->name('registro');
 
-Route::get('/home', function () {
+Route::get('/homepage', function () {
     return view('users.homepage', [
         'info' => Auth::user()
     ]);
@@ -27,7 +28,9 @@ Route::get('/offers', function () {
     ]);
 })->name('offers');
 
+Route::get('/offers', [PromotionController::class, 'index'])->name('offers');
 
+Route::get('/promociones', [PromotionController::class, 'index'])->name('promociones');
 
 Route::get('/offers/{promotion}', function (Promotion $promotion) {
     return view ('users.offersInfo', [

@@ -1,22 +1,13 @@
-@props(['title', 'price', 'description', 'image', 'logo', 'id'])
+@props(['title', 'price' => '', 'image', 'logo', 'description', 'id'])
 
-<div class="grid grid-cols-2 shadow-md mx-4 my-4 rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-
-    <div class="flex flex-col items-center justify-center p-1 bg-click-greenlime text-black">
-        <h1 class="text-xl font-bold"> {{ $title }} </h1>
-        <p class="text-4xl p-1"> {{ $price }} </p>
-        <img src="{{ asset("img/$logo") }}" class="mt-2 h-12">
+<div class="bg-white rounded-lg shadow p-4 hover:shadow-lg transition">
+    <img src="{{ $image }}" alt="{{ $title }}" class="w-full h-40 object-cover rounded">
+    <div class="mt-3 flex items-center space-x-3">
+        <img src="{{ $logo }}" alt="Logo" class="w-10 h-10 rounded-full border">
+        <h3 class="text-lg font-semibold">{{ $title }}</h3>
     </div>
-
-
-    <div class="flex flex-col items-center justify-center">
-        <img src="{{ asset("img/$image") }}" class="mt-2 h-35">
-    </div>
-
-
-    <div class="col-span-2 p-4 items-center justify-center bg-click-blue1 text-white">
-        <p> {{ $description }} </p>
-        <a href="{{ route('offerDetails', $id) }}" class="mt-4 inline-block px-6 py-2 items-center justify-center bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300">Ver Más</a>
-    </div>
+    <p class="mt-2 text-gray-600">{{ $description }}</p>
+    @if($price)
+        <p class="mt-2 text-green-600 font-bold">Precio: {{ $price }}</p>
+    @endif
 </div>
-
