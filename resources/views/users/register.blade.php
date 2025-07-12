@@ -6,13 +6,24 @@
             <h2 class="text-4xl font-bold mt-4">¡Bienvenido!</h2>
             <p class="text-xl mb-6 text-gray-600">Crea tu cuenta aquí</p>
 
+                        @if ($errors->any())
+                <div class="mb-4">
+                    <ul class="list-disc list-inside text-sm text-red-600">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
 
             <!-- Formulario -->
             <form method="POST" action="/register" class="space-y-4 w-full max-w-md">
                 @csrf
-                <input type="text" name="username" placeholder="Usuario" class="w-full p-3 border rounded bg-gray-100" required>
+                <input type="text" name="name" placeholder="Usuario" class="w-full p-3 border rounded bg-gray-100" required>
                 <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded bg-gray-100" required>
                 <input type="password" name="password" placeholder="Contraseña" class="w-full p-3 border rounded bg-gray-100" required>
+                <input type="password" name="password_confirmation" placeholder="Confirmar contraseña" class="w-full p-3 border rounded bg-gray-100" required>
 
                  <select name="proveedor" class="w-full p-3 border rounded bg-gray-100">
                     <option value="">Proveedor de tarjeta</option>
@@ -27,7 +38,6 @@
                 </select>
                   <input type="date" name="fecha_corte" class="w-full p-3 border rounded bg-gray-100">
                 <input type="date" name="fecha_pago" class="w-full p-3 border rounded bg-gray-100">
-
                 <x-primary-button class="w-full bg-blue-900 text-white py-3 rounded mt-2 hover:bg-blue-800"> </x-primary-button>
             </form>
 

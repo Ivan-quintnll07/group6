@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-
-
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
@@ -18,8 +16,14 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $guarded = [
-        'id',
+    protected $fillable = [
+        'username',
+        'email',
+        'password',
+        'proveedor',
+        'tipo_tarjeta',
+        'fecha_corte',
+        'fecha_pago',
     ];
 
     /**
@@ -50,8 +54,9 @@ class User extends Authenticatable
         return $this->hasMany(Card::class);
     }
 
-     public function favorites()
+    public function favorites()
     {
-        return $this->belongsToMany(Promotion::class);
+        return $this->belongsToMany(Promotion::class, 'favorite_promotions')
+                    ->withTimestamps();
     }
 }

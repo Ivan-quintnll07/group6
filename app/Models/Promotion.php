@@ -19,5 +19,11 @@ class Promotion extends Model
         'restriction',
         'category'
     ];
-}
 
+
+    public function favoritedByUsers()
+    {
+        return $this->belongsToMany(User::class, 'favorite_promotions')
+                    ->withTimestamps();
+    }
+}

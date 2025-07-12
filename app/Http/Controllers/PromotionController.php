@@ -10,7 +10,14 @@ class PromotionController extends Controller
     public function index()
     {
         $offers = Promotion::all()->groupBy('category');
-        return view('offers.offer', compact('offers'));
+
+        $favorites = [];
+
+        if (auth()->check()) {
+            $favorites = auth()->user()->favorites->pluck('id')->toArray();
+        }
+
+        return view('offers.offer', compact('offers', 'favorites'));
     }
 
     public function toggleFavorite(Promotion $promotion)
