@@ -17,7 +17,7 @@ class Promotion extends Model
         'title',
         'benefit',
         'restriction',
-        'category'
+        'category' // Este campo es importante para agrupar
     ];
 }
 

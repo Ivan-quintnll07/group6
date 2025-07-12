@@ -39,7 +39,7 @@
             <div class="p-6 text-center">
                 <p class="text-2xl font-normal mb-2 pb-4">20% de descuento</p>
                 <i class="far fa-heart text-gray-500 hover:text-red-500 text-4xl cursor-pointer pt-4"></i>
-                <button class="text-white w-[200px] text-black px-4 py-2 pt-4 rounded-full hover:bg-click-secondaryCyan transition" style="background-color: #01798f90;">
+                <button class="text-white w-[150px] text-black px-4 py-2 pt-4 rounded-full hover:bg-click-secondaryCyan transition" style="background-color: #01798f90;">
                     Ver más
                 </button>
             </div>
