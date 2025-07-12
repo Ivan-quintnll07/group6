@@ -17,7 +17,12 @@ class Promotion extends Model
         'title',
         'benefit',
         'restriction',
-        'category' // Este campo es importante para agrupar
+        'category' 
     ];
+
+    public function favoritedBy()
+{
+    return $this->belongsToMany(User::class);
+}
 }
 

@@ -3,19 +3,27 @@
 namespace App\Http\Controllers;
 
 use App\Models\Promotion;
+use Illuminate\Support\Facades\Auth;
 
 class PromotionController extends Controller
 {
     public function index()
     {
-        // Trae todas las promociones y las agrupa por categoría
         $offers = Promotion::all()->groupBy('category');
-
-        // Para verificar qué trae $offers, puedes usar dd($offers) temporalmente:
-        // dd($offers);
-
-        // Retorna la vista con las promociones agrupadas
         return view('offers.offer', compact('offers'));
+    }
+
+    public function toggleFavorite(Promotion $promotion)
+    {
+        $user = Auth::user();
+
+        if ($user->favorites()->where('promotion_id', $promotion->id)->exists()) {
+            $user->favorites()->detach($promotion->id);
+        } else {
+            $user->favorites()->attach($promotion->id);
+        }
+
+        return back();
     }
 }
 

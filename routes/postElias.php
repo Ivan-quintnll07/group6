@@ -32,6 +32,7 @@ Route::get('/offers', [PromotionController::class, 'index'])->name('offers');
 
 Route::get('/promociones', [PromotionController::class, 'index'])->name('promociones');
 
+
 Route::get('/offers/{promotion}', function (Promotion $promotion) {
     return view ('users.offersInfo', [
         'offer' => $promotion

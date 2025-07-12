@@ -49,4 +49,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Card::class);
     }
+
+     public function favorites()
+    {
+        return $this->belongsToMany(Promotion::class);
+    }
 }
