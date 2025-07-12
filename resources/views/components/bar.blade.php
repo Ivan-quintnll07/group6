@@ -37,16 +37,16 @@
             @guest
             <b><a href="/" style="display: inline-block; color: #60A5FA hover:text-gray-100; text-decoration: none; font-size: 18px; h; margin-bottom: 15px;">
                 <i class="fas fa-home"></i> Página Principal</a></b><br>
-
-<<<<<<< Updated upstream
-            <b><a href="register" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
-=======
             <b><a href="offers" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fa-solid fa-cart-shopping"></i> Promociones</a></b><br>
 
             <b><a href="signup" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
->>>>>>> Stashed changes
+
                 <i class="fas fa-user-plus"></i> Registrarse</a></b><br>
+
+
+            <b><a href="favoritos" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> favoritos</a></b><br>
 
             <b><a href="login" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></b><br>
@@ -62,9 +62,6 @@
 
             <b><a href="education" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-graduation-cap"></i> Educación</a></b><br>
-
-                        <b><a href="favoritos" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
-                <i class="fa-solid fa-cart-shopping"></i> favoritos</a></b><br>
 
 
 
