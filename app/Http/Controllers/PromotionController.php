@@ -26,4 +26,3 @@ class PromotionController extends Controller
         return back();
     }
 }
-

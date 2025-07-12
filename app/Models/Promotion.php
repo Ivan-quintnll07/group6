@@ -17,12 +17,7 @@ class Promotion extends Model
         'title',
         'benefit',
         'restriction',
-        'category' 
+        'category'
     ];
-
-    public function favoritedBy()
-{
-    return $this->belongsToMany(User::class);
-}
 }
 
