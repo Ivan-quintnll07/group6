@@ -14,15 +14,6 @@
     >
 </div>
 
-        @guest
-        <nav class="space-x-4">
-
-          <span flex itemas-center class="text-white">
-            <i  class="fas fa-user-plus"></i>
-            <a href="perfil" class="text-white hover:text-gray-300">Perfil</a>
-
-        </nav>
-        @endguest
 
         @auth
         <nav class="space-x-4">
@@ -47,7 +38,7 @@
             <b><a href="/" style="display: inline-block; color: #60A5FA hover:text-gray-100; text-decoration: none; font-size: 18px; h; margin-bottom: 15px;">
                 <i class="fas fa-home"></i> Página Principal</a></b><br>
 
-            <b><a href="signup" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+            <b><a href="register" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-user-plus"></i> Registrarse</a></b><br>
 
             <b><a href="login" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">

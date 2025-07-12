@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PromotionController;
 
 
-Route::get('/signup', function () {
-    return view('users.signup');
-})->name('registro');
+Route::get('/register', function () {
+    return view('users.register');
+})->name('register');
 
 Route::get('/homepage', function () {
     return view('users.homepage', [

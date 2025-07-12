@@ -17,8 +17,8 @@
 
     <div class="absolute top-1/2 right-8 transform -translate-y-1/2 flex flex-col gap-7 z-10 text-2xl text-white text-center pr-20 pl-20 pt-[90px]  pb-[90px]  mr-72 color: trans" style=" background-color: #003f5d95;">
         <a href="{{ route('login') }}" class="border-b border-white hover:text-blue-300">Iniciar sesión</a>
-        <a href="{{ route('registro') }}" class="border-b border-white hover:text-blue-300">Registrarse</a>
-         <a href="{{ route('registro') }}" class="border-b border-white hover:text-blue-300">Inicio</a>
+        <a href="{{ route('register') }}" class="border-b border-white hover:text-blue-300">Registrarse</a>
+
     </div>
 </main>
 
