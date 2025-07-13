@@ -1,11 +1,12 @@
-<x-layout>  <x-bar/>
+<x-layout>
+     <x-bar/>
 
     <div class="flex justify-center items-center h-screen  ">
         <div class=" bg-white/50 px-20 py-20 rounded-md shadow-lg w-1/2 flex flex-col items-center ">
 
             <h2 class="text-7xl font-bold mb-2 ">Perfil</h2>
              <p class="text-sm text-gray-600 mb-4">Información del usuario</p>
-             
+
 
               <div class="w-full p-4 border rounded bg-gray-100 mb-4 block text-sm font-medium">
                 {{ $user->name }}

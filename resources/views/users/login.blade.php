@@ -50,10 +50,9 @@
                     </div>
 
                     <!-- Botón -->
-                    <button type="submit"
-                        class="w-full bg-click-primaryCyan hover:bg-click-secondaryCyan text-black font-bold py-2 rounded-md transition">
-                        Iniciar Sesión
-                    </button>
+                    <button class="bg-blue-500 hover:bg-gray-700 items-center text-gray font-poppins rounded px-12 py-3 focus:outline-none focus:shadow-outline" type="submit">
+                    Iniciar Sesión </button>
+
                 </form>
 
                 <p class="text-sm text-center mt-4">
