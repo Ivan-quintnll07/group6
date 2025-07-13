@@ -12,12 +12,15 @@
 
 
             <div class="flex space-x-6 text-3xl text-black mb-4">
-                <button class="flex space-x-6 items-center focus:outline-none">
-                    <span class="material-symbols-outlined">home</span>
+                <div class="flex space-x-6 items-center focus:outline-none">
+                    <a href="{{ route('principal') }}">
+
+                        <span class="material-symbols-outlined">home</span>
+                    </a>
                     <span class="material-symbols-outlined">favorite</span>
                     <span class="material-symbols-outlined">shopping_bag</span>
                     <span class="material-symbols-outlined">calendar_month</span>
-                </button>
+                </div>
             </div>
 
             <!-- Título -->

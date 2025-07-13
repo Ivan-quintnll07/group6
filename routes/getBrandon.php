@@ -39,7 +39,7 @@ Route::get('/education', function () {
 
 Route::get('/principal', function () {
     return view('principal');
-})->middleware('auth');
+})->middleware('guest')->name('principal');
 
 Route::get('/favoritos', function () {
     return view('favoritos');
@@ -50,4 +50,8 @@ Route::get('/addCard', function () {
         'banks' => Bank::all(),
         'CardType' =>CardType::all(),
     ]);
-});
+})->middleware('auth');
+
+Route::get('/changeCards', function () {
+    return view('change');
+})->middleware('auth');
