@@ -18,6 +18,9 @@ class CreatePromotionsTable extends Migration
             $table->text('benefit');
             $table->text('restriction')->nullable();
             $table->string('category');
+            $table->text('condiciones')->nullable();
+            $table->string('aplica_para')->nullable();
+            $table->text('nota')->nullable();
             $table->timestamps();
         });
     }

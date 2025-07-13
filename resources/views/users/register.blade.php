@@ -1,4 +1,5 @@
-<x-layout> <x-bar/>
+<x-layout>
+    <x-bar/>
 
     <div class="flex h-screen font-sans">
         {{-- Lado Izquierdo: Formulario --}}
@@ -6,26 +7,15 @@
             <h2 class="text-4xl font-bold mt-4">¡Bienvenido!</h2>
             <p class="text-xl mb-6 text-gray-600">Crea tu cuenta aquí</p>
 
-                        @if ($errors->any())
-                <div class="mb-4">
-                    <ul class="list-disc list-inside text-sm text-red-600">
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-
-
             <!-- Formulario -->
-            <form method="POST" action="/register" class="space-y-4 w-full max-w-md">
+            <form method="POST" action="{{ route('register') }}"class="space-y-4 w-full max-w-md">
                 @csrf
+                <!-- Cambié 'username' a 'name' -->
                 <input type="text" name="name" placeholder="Usuario" class="w-full p-3 border rounded bg-gray-100" required>
                 <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded bg-gray-100" required>
                 <input type="password" name="password" placeholder="Contraseña" class="w-full p-3 border rounded bg-gray-100" required>
-                <input type="password" name="password_confirmation" placeholder="Confirmar contraseña" class="w-full p-3 border rounded bg-gray-100" required>
 
-                 <select name="proveedor" class="w-full p-3 border rounded bg-gray-100">
+                <select name="proveedor" class="w-full p-3 border rounded bg-gray-100">
                     <option value="">Proveedor de tarjeta</option>
                     <option value="visa">Visa</option>
                     <option value="mastercard">MasterCard</option>
@@ -36,9 +26,11 @@
                     <option value="credito">Crédito</option>
                     <option value="debito">Débito</option>
                 </select>
-                  <input type="date" name="fecha_corte" class="w-full p-3 border rounded bg-gray-100">
+
+                <input type="date" name="fecha_corte" class="w-full p-3 border rounded bg-gray-100">
                 <input type="date" name="fecha_pago" class="w-full p-3 border rounded bg-gray-100">
-                <x-primary-button class="w-full bg-blue-900 text-white py-3 rounded mt-2 hover:bg-blue-800"> </x-primary-button>
+
+                <x-primary-button class="w-full bg-blue-900 text-white py-3 rounded mt-2 hover:bg-blue-800">Registrar</x-primary-button>
             </form>
 
             <p class="mt-6 text-sm">
@@ -54,8 +46,7 @@
 
             <!-- Logo centrado -->
             <div class="absolute inset-0 flex items-center justify-center z-10">
-        <img src="{{ asset('img/Main.png') }}" class="max-w-[300px] absolute top 1/2 left-50 w-full">
-
+                <img src="{{ asset('img/Main.png') }}" class="max-w-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
             </div>
         </div>
     </div>

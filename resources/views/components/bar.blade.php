@@ -56,6 +56,7 @@
             <b><a href="calendar" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-calendar-alt"></i> Calendario</a></b><br>
 
+<<<<<<< Updated upstream
             <b><a href="addCard" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-credit-card"></i> Agregar Tarjeta</a></b><br>
 
@@ -66,6 +67,9 @@
                 <i class="fa-solid fa-cart-shopping"></i> Favoritos</a></b><br>
 
             <b><a href="education" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+=======
+            <b><a href="education" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+>>>>>>> Stashed changes
                 <i class="fas fa-graduation-cap"></i> Educación</a></b><br>
 
 <<<<<<< Updated upstream
@@ -79,8 +83,14 @@
             @endguest
 
             @auth
-            <b><a href="/" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
+            <b><a href="/principal" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
                 <i class="fas fa-home"></i> Página Principal</a></b><br>
+
+            <b><a href="offers" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> Promociones</a></b><br>
+
+            <b><a href="favoritos" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> favoritos</a></b><br>
 
             <b><a href="calendar" style="display: inline-block; color: #f1f2f5; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
                 <i class="fas fa-calendar-alt"></i> Calendario</a></b><br>
@@ -91,12 +101,18 @@
             <b><a href="addCard" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
                 <i class="fas fa-credit-card"></i> Agregar Tarjeta</a></b><br>
 
+<<<<<<< Updated upstream
              <b><a href="changeCard" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-credit-card"></i> Cambiar Tarjeta</a></b><br>
 
             <b><a href="favoritos" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fa-solid fa-cart-shopping"></i> Favoritos</a></b><br>
 
+=======
+             <b><a href="changeCard" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fas fa-credit-card"></i> Cambiar Tarjeta</a></b><br>
+
+>>>>>>> Stashed changes
 
             @endauth
         </nav>

@@ -57,7 +57,7 @@
 
                 <p class="text-sm text-center mt-4">
                     ¿No tienes una cuenta?
-                    <a href="/signup" class="text-click-primaryCyan font-semibold hover:underline">Crear cuenta</a>
+                    <a href="/register" class="text-click-primaryCyan font-semibold hover:underline">Crear cuenta</a>
                 </p>
             </div>
         </div>

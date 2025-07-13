@@ -1,5 +1,6 @@
 <x-layout>
-    <x-bar> </x-bar>
+
+     <x-bar> </x-bar>
 
     <main class="relative h-[calc(100vh-50px)] w-full">
     <div class="absolute inset-0 bg-cover bg-center"

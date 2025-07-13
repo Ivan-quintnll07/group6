@@ -18,7 +18,7 @@ class PromotionSeeder extends Seeder
         $bank = Bank::where('name', 'Banco Agrícola')->first();
 
         if (!$bank) {
-            throw new \Exception("El banco 'Banco Agrícola' no se encontró. Asegúrete de haber corrido el seeder de bancos antes que este.");
+            throw new \Exception("El banco 'Banco Agrícola' no se encontró. Asegúrate de haber corrido el seeder de bancos antes que este.");
         }
 
         $promotions = [
@@ -52,8 +52,7 @@ class PromotionSeeder extends Seeder
                 'restriction' => 'Válido sólo los sábados y domingos de julio.',
                 'category' => 'Supermercado',
             ],
-
-                        [
+            [
                 'bank_id' => $bank->id,
                 'business' => 'Super Selectos',
                 'image' => 'principal1.jpg',
@@ -63,8 +62,7 @@ class PromotionSeeder extends Seeder
                 'restriction' => 'Válido sólo los sábados y domingos de julio.',
                 'category' => 'Supermercado',
             ],
-
-                        [
+            [
                 'bank_id' => $bank->id,
                 'business' => 'Super Selectos',
                 'image' => 'principal2.jpg',
@@ -84,8 +82,7 @@ class PromotionSeeder extends Seeder
                 'restriction' => 'Promoción vigente del 5 al 25 de julio.',
                 'category' => 'Electrónica',
             ],
-
-                       [
+            [
                 'bank_id' => $bank->id,
                 'business' => 'La Curacao',
                 'image' => 'sam.png',
@@ -95,8 +92,7 @@ class PromotionSeeder extends Seeder
                 'restriction' => 'Promoción vigente del 5 al 25 de julio.',
                 'category' => 'Electrónica',
             ],
-
-                       [
+            [
                 'bank_id' => $bank->id,
                 'business' => 'La Curacao',
                 'image' => 'Hua.png',
@@ -156,8 +152,7 @@ class PromotionSeeder extends Seeder
                 'restriction' => 'Hasta agotar existencias.',
                 'category' => 'Moda',
             ],
-
-                        [
+            [
                 'bank_id' => $bank->id,
                 'business' => 'Aliss',
                 'image' => 'ro3.png',
@@ -167,8 +162,7 @@ class PromotionSeeder extends Seeder
                 'restriction' => 'Hasta agotar existencias.',
                 'category' => 'Moda',
             ],
-
-                        [
+            [
                 'bank_id' => $bank->id,
                 'business' => 'Aliss',
                 'image' => 'ro4.png',
@@ -178,8 +172,7 @@ class PromotionSeeder extends Seeder
                 'restriction' => 'Hasta agotar existencias.',
                 'category' => 'Moda',
             ],
-
-                        [
+            [
                 'bank_id' => $bank->id,
                 'business' => 'Aliss',
                 'image' => 'gucci.png',
