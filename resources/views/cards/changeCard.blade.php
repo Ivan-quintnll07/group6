@@ -17,24 +17,14 @@
 
                         <span class="material-symbols-outlined">home</span>
                     </a>
-                    <a href="{{ route('favorite') }}">
-
-                        <span class="material-symbols-outlined">favorite</span>
-                    </a>
-                    <a href="{{ route('eucation') }}">
-
-                        <span class="material-symbols-outlined">shopping_bag</span>
-                    </a>
-                    <a href="{{ route('eucation') }}">
-
-                        <span class="material-symbols-outlined">calendar_month</span>
-                    </a>
-
+                    <span class="material-symbols-outlined">favorite</span>
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <span class="material-symbols-outlined">calendar_month</span>
                 </div>
             </div>
 
             <!-- Título -->
-            <h1 class="text-3xl font-semibold text-center mb-6">Agregar tarjeta</h1>
+            <h1 class="text-3xl font-semibold text-center mb-6">Cambiar Tarjeta</h1>
 
             <!-- Ícono tarjeta -->
             <div class="text-center mb-4">

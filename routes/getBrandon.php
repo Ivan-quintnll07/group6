@@ -48,6 +48,9 @@ Route::get('/addCard', function () {
     ]);
 })->middleware('auth');
 
-Route::get('/changeCards', function () {
-    return view('change');
+Route::get('/changeCard', function () {
+    return view('cards/changeCard', [
+        'banks' => Bank::all(),
+        'CardType' =>CardType::all(),
+    ]);
 })->middleware('auth');
