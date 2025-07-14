@@ -2,8 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PromotionController;
+<<<<<<< Updated upstream
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\LoginController;
+=======
+
+>>>>>>> Stashed changes
 
 Route::middleware('auth')->group(function () {
 
@@ -31,6 +35,7 @@ Route::post('/perfil', [App\Http\Controllers\ProfileController::class, 'update']
 
 Route::post('/register', [\App\Http\Controllers\Auth\RegisterController::class, 'store'])->name('register.store');
 
+<<<<<<< Updated upstream
 
 Route::middleware('auth')->group(function () {
     Route::get('/perfil', [ProfileController::class, 'show'])->name('perfil.show');
@@ -41,3 +46,6 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
+=======
+Route::post('/register', [\App\Http\Controllers\Auth\RegisterController::class, 'store'])->name('register.store');
+>>>>>>> Stashed changes

@@ -14,7 +14,11 @@ class RegisterController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
+<<<<<<< Updated upstream
             'name' => 'required|string|max:255',
+=======
+            'username' => 'required|string|max:255|',
+>>>>>>> Stashed changes
             'email' => 'required|string|email|max:255|unique:users,email',
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'proveedor' => 'nullable|string|max:255',
