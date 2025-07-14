@@ -14,7 +14,7 @@ class RegisterController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'username' => 'required|string|max:255|',
+            'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users,email',
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'proveedor' => 'nullable|string|max:255',
@@ -24,7 +24,7 @@ class RegisterController extends Controller
         ]);
 
         $user = User::create([
-            'username' => $validated['username'],
+            'name' => $validated['name'],
             'email' => $validated['email'],
             'password' => Hash::make($validated['password']),
             'proveedor' => $validated['proveedor'] ?? null,

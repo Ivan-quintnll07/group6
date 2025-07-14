@@ -18,5 +18,8 @@ Route::get('cards/add', function () {
         'CardType' => CardType::all(),
     ]);
 
+
+
+
 });
 

@@ -37,13 +37,13 @@
             @guest
             <b><a href="/" style="display: inline-block; color: #f4f6fa hover:text-gray-100; text-decoration: none; font-size: 18px; h; margin-bottom: 15px;">
                 <i class="fas fa-home"></i> Página Principal</a></b><br>
-            <b><a href="offers" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+            <b><a href="offers" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fa-solid fa-cart-shopping"></i> Promociones</a></b><br>
 
-            <b><a href="offers" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+            <b><a href="offers" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fa-solid fa-cart-shopping"></i> Promociones</a></b><br>
 
-            <b><a href="signup" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+            <b><a href="signup" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
 
                 <i class="fas fa-user-plus"></i> Registrarse</a></b><br>
 

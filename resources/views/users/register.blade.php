@@ -7,13 +7,25 @@
             <h2 class="text-4xl font-bold mt-4">¡Bienvenido!</h2>
             <p class="text-xl mb-6 text-gray-600">Crea tu cuenta aquí</p>
 
+            <!-- Mostrar errores -->
+            @if ($errors->any())
+                <div class="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded w-full max-w-md">
+                    <ul class="list-disc list-inside">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <!-- Formulario -->
-            <form method="POST" action="{{ route('register') }}"class="space-y-4 w-full max-w-md">
+            <form method="POST" action="{{ route('register') }}" class="space-y-4 w-full max-w-md">
                 @csrf
-                <!-- Cambié 'username' a 'name' -->
+
                 <input type="text" name="name" placeholder="Usuario" class="w-full p-3 border rounded bg-gray-100" required>
                 <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded bg-gray-100" required>
                 <input type="password" name="password" placeholder="Contraseña" class="w-full p-3 border rounded bg-gray-100" required>
+                <input type="password" name="password_confirmation" placeholder="Confirmar contraseña" class="w-full p-3 border rounded bg-gray-100" required>
 
                 <select name="proveedor" class="w-full p-3 border rounded bg-gray-100">
                     <option value="">Proveedor de tarjeta</option>
