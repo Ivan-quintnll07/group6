@@ -14,15 +14,6 @@
     >
 </div>
 
-        @guest
-        <nav class="space-x-4">
-
-          <span flex itemas-center class="text-white">
-            <i  class="fas fa-user-plus"></i>
-            <a href="perfil" class="text-white hover:text-gray-300">Perfil</a>
-
-        </nav>
-        @endguest
 
         @auth
         <nav class="space-x-4">
@@ -44,32 +35,68 @@
             <img src="{{ asset('img/Principal.png') }}" width="140" style="margin: 0 auto 1.5rem auto; display: block;">
 
             @guest
-            <b><a href="/" style="display: inline-block; color: #60A5FA hover:text-gray-100; text-decoration: none; font-size: 18px; h; margin-bottom: 15px;">
+            <b><a href="/" style="display: inline-block; color: #f4f6fa hover:text-gray-100; text-decoration: none; font-size: 18px; h; margin-bottom: 15px;">
                 <i class="fas fa-home"></i> Página Principal</a></b><br>
+            <b><a href="offers" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> Promociones</a></b><br>
 
-            <b><a href="signup" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+            <b><a href="offers" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> Promociones</a></b><br>
+
+            <b><a href="signup" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+
                 <i class="fas fa-user-plus"></i> Registrarse</a></b><br>
 
-            <b><a href="login" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+              <b><a href="login" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a></b><br>
 
-            <b><a href="calendar" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+            <b><a href="offers" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> Promociones</a></b><br>
+
+            <b><a href="calendar" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-calendar-alt"></i> Calendario</a></b><br>
 
-            <b><a href="addCard" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+
+            <b><a href="addCard" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-credit-card"></i> Agregar Tarjeta</a></b><br>
 
-            <b><a href="changeCard" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+            <b><a href="changeCard" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
                 <i class="fas fa-credit-card"></i> Cambiar Tarjeta</a></b><br>
 
+            <b><a href="favoritos" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> Favoritos</a></b><br>
+
+            <b><a href="education" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             <b><a href="education" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+
                 <i class="fas fa-graduation-cap"></i> Educación</a></b><br>
+
+
+
+                        <b><a href="favoritos" style="display: inline-block; color: #60A5FA; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> favoritos</a></b><br>
+
+
+
 
             @endguest
 
             @auth
-            <b><a href="/" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
+            <b><a href="/principal" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
                 <i class="fas fa-home"></i> Página Principal</a></b><br>
+
+            <b><a href="offers" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> Promociones</a></b><br>
+
+            <b><a href="favoritos" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fa-solid fa-cart-shopping"></i> favoritos</a></b><br>
 
             <b><a href="calendar" style="display: inline-block; color: #f1f2f5; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
                 <i class="fas fa-calendar-alt"></i> Calendario</a></b><br>
@@ -80,6 +107,20 @@
             <b><a href="addCard" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 10px;">
                 <i class="fas fa-credit-card"></i> Agregar Tarjeta</a></b><br>
 
+             <b><a href="changeCard" style="display: inline-block; color: #eeeff1; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fas fa-credit-card"></i> Cambiar Tarjeta</a></b><br>
+
+<<<<<<< Updated upstream
+
+             <b><a href="changeCard" style="display: inline-block; color: #f4f6fa; text-decoration: none; font-size: 18px; margin-bottom: 15px;">
+                <i class="fas fa-credit-card"></i> Cambiar Tarjeta</a></b><br>
+
+
+
+
+
+=======
+>>>>>>> Stashed changes
 
             @endauth
         </nav>

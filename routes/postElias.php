@@ -1,48 +1,58 @@
 <?php
 
-use App\Models\Promotion;
-use Carbon\Factory;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PromotionController;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Auth\LoginController;
+=======
+
+>>>>>>> Stashed changes
+=======
+
+>>>>>>> Stashed changes
+
+Route::middleware('auth')->group(function () {
+
+    Route::get('/favoritos', [PromotionController::class, 'favorites'])->name('favoritos');
+    Route::get('/favoritos/{category}', [PromotionController::class, 'favoritesByCategory'])->name('favoritos.categoria');
 
 
-Route::get('/signup', function () {
-    return view('users.signup');
-})->name('registro');
-
-Route::get('/homepage', function () {
-    return view('users.homepage', [
-        'info' => Auth::user()
-    ]);
+    Route::post('/offers/{promotion}/favorite', [PromotionController::class, 'toggleFavorite'])->name('offers.toggleFavorite');
 });
 
-Route::get('/principal', function () {
-    return view ('users.principal');
+
+Route::get('/offers', [PromotionController::class, 'index'])->name('offers.index');
+Route::get('/offers/{promotion}', [PromotionController::class, 'show'])->name('offers.show');
+
+
+Route::get('/login', function () {
+    return view('users.login');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('users.register');
+})->name('register');
+Route::get('/perfil', [App\Http\Controllers\ProfileController::class, 'show'])->name('perfil')->middleware('auth');
+Route::post('/perfil', [App\Http\Controllers\ProfileController::class, 'update'])->name('perfil.update')->middleware('auth');
+
+Route::post('/register', [\App\Http\Controllers\Auth\RegisterController::class, 'store'])->name('register.store');
+<<<<<<< Updated upstream
+
+<<<<<<< Updated upstream
+
+Route::middleware('auth')->group(function () {
+    Route::get('/perfil', [ProfileController::class, 'show'])->name('perfil.show');
+    Route::post('/perfil', [ProfileController::class, 'update'])->name('perfil.update');
+
+    Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
-Route::get('/offers', function () {
-    return view ('offers.offer', [
-        'offers' => Promotion::all()
-
-    ]);
-})->name('offers');
-
-Route::get('/offers', [PromotionController::class, 'index'])->name('offers');
-
-Route::get('/promociones', [PromotionController::class, 'index'])->name('promociones');
-
-Route::get('/offers/{promotion}', function (Promotion $promotion) {
-    return view ('users.offersInfo', [
-        'offer' => $promotion
-
-    ]);
-})->name('offerDetails');
-
-
-
-
-
-
-
-
+=======
+Route::post('/register', [\App\Http\Controllers\Auth\RegisterController::class, 'store'])->name('register.store');
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes

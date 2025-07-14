@@ -2,51 +2,46 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
-
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;  
+>>>>>>> Stashed changes
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;  
+>>>>>>> Stashed changes
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use Notifiable, HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
-    protected $guarded = [
-        'id',
-    ];
-
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-    protected $hidden = [
+    protected $fillable = [
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        'name',
+        'email',
         'password',
-        'remember_token',
+        'proveedor',
+        'tipo_tarjeta',
+        'fecha_corte',
+        'fecha_pago',
+=======
+        'name', 'email', 'password',
+>>>>>>> Stashed changes
+=======
+        'name', 'email', 'password',
+>>>>>>> Stashed changes
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
-    {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
-    }
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 
-    public function cards()
+    public function favorites()
     {
-        return $this->hasMany(Card::class);
+        return $this->belongsToMany(\App\Models\Promotion::class, 'favorites', 'user_id', 'promotion_id');
     }
 }

@@ -1,12 +1,9 @@
 
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
 <body class="bg-gray-100">
     <x-layout>
         <x-bar></x-bar>
- 
+
         <main class="relative h-screen bg-cover bg-center" style="background-image: url('{{ asset('img/tarjetahombre.png') }}')">
 
             <!-- Logo superior izquierdo -->
@@ -17,9 +14,9 @@
 
             <!-- Botones verticales lado derecho -->
             <div class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white space-y-4 text-right">
-                <a href="#" class="block border-b border-white pb-1 hover:underline">Iniciar sesión</a>
-                <a href="#" class="block border-b border-white pb-1 hover:underline">Registrarse</a>
-                <a href="#" class="block border-b border-white pb-1 hover:underline">Inicio</a>
+                <a href="" class="block border-b border-white pb-1 hover:underline">Iniciar sesión</a>
+                <a href="" class="block border-b border-white pb-1 hover:underline">Registrarse</a>
+
             </div>
 
             <!-- Logo central -->

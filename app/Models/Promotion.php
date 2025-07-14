@@ -17,7 +17,19 @@ class Promotion extends Model
         'title',
         'benefit',
         'restriction',
-        'category'
+        'category',
+        'condiciones',
+        'aplica_para',
+        'nota',
     ];
-}
 
+    public function favoritedByUsers()
+    {
+        return $this->belongsToMany(User::class, 'favorite_promotions')->withTimestamps();
+    }
+
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class, 'category_promotion')->withTimestamps();
+    }
+}
