@@ -1,6 +1,7 @@
 <x-layout>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <x-bar></x-bar>
 
     <style>
@@ -44,6 +45,9 @@
             transition: all 0.3s ease;
         }
     </style>
+=======
+     <x-bar> </x-bar>
+>>>>>>> Stashed changes
 =======
      <x-bar> </x-bar>
 >>>>>>> Stashed changes

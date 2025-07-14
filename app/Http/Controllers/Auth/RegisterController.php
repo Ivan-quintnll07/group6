@@ -15,7 +15,11 @@ class RegisterController extends Controller
     {
         $validated = $request->validate([
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             'name' => 'required|string|max:255',
+=======
+            'username' => 'required|string|max:255|',
+>>>>>>> Stashed changes
 =======
             'username' => 'required|string|max:255|',
 >>>>>>> Stashed changes

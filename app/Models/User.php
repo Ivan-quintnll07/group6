@@ -5,7 +5,11 @@ namespace App\Models;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;  
+>>>>>>> Stashed changes
 =======
 use Illuminate\Database\Eloquent\Factories\HasFactory;  
 >>>>>>> Stashed changes
@@ -16,6 +20,7 @@ class User extends Authenticatable
 
     protected $fillable = [
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         'name',
         'email',
         'password',
@@ -23,6 +28,9 @@ class User extends Authenticatable
         'tipo_tarjeta',
         'fecha_corte',
         'fecha_pago',
+=======
+        'name', 'email', 'password',
+>>>>>>> Stashed changes
 =======
         'name', 'email', 'password',
 >>>>>>> Stashed changes

@@ -8,6 +8,7 @@
             <p class="text-xl mb-6 text-gray-600">Crea tu cuenta aquí</p>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <!-- Mostrar errores -->
             @if ($errors->any())
                 <div class="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded w-full max-w-md">
@@ -23,6 +24,12 @@
             <form method="POST" action="{{ route('register') }}" class="space-y-4 w-full max-w-md">
                 @csrf
 
+=======
+            <!-- Formulario -->
+            <form method="POST" action="{{ route('register') }}"class="space-y-4 w-full max-w-md">
+                @csrf
+                <!-- Cambié 'username' a 'name' -->
+>>>>>>> Stashed changes
 =======
             <!-- Formulario -->
             <form method="POST" action="{{ route('register') }}"class="space-y-4 w-full max-w-md">
