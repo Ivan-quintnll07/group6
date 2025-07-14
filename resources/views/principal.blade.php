@@ -1,7 +1,6 @@
 <x-layout>
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
     <x-bar></x-bar>
 
     <style>
@@ -45,12 +44,12 @@
             transition: all 0.3s ease;
         }
     </style>
-=======
+
      <x-bar> </x-bar>
->>>>>>> Stashed changes
-=======
+
+
      <x-bar> </x-bar>
->>>>>>> Stashed changes
+
 
     <main class="relative h-[calc(100vh-50px)] w-full">
         <div class="absolute inset-0 bg-cover bg-center animate-fadeInBg"
