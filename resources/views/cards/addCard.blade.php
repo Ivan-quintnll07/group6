@@ -21,7 +21,7 @@
 
                         <span class="material-symbols-outlined">favorite</span>
                     </a>
-                    <a href="{{ route('eucation') }}">
+                    <a href="{{ route('education') }}">
 
                         <span class="material-symbols-outlined">shopping_bag</span>
                     </a>
