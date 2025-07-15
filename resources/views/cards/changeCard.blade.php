@@ -13,13 +13,23 @@
 
             <div class="flex space-x-6 text-3xl text-black mb-4">
                 <div class="flex space-x-6 items-center focus:outline-none">
-                    <a href="{{ route('principal') }}">
+                     <a href="{{ url('/principal') }}">
 
                         <span class="material-symbols-outlined">home</span>
                     </a>
-                    <span class="material-symbols-outlined">favorite</span>
-                    <span class="material-symbols-outlined">shopping_bag</span>
-                    <span class="material-symbols-outlined">calendar_month</span>
+                    <a href="{{ url('favoritos') }}">
+
+                        <span class="material-symbols-outlined">favorite</span>
+                    </a>
+
+                    <a href="{{ url('offers') }}">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                    </a>
+
+                   <a href="{{ url('calendar') }}">
+
+                        <span class="material-symbols-outlined">calendar_month</span>
+                    </a>
                 </div>
             </div>
 
