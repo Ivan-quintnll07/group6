@@ -1,6 +1,4 @@
 <x-layout>
-
-
     <x-bar></x-bar>
 
     <style>
@@ -45,12 +43,6 @@
         }
     </style>
 
-     <x-bar> </x-bar>
-
-
-     <x-bar> </x-bar>
-
-
     <main class="relative h-[calc(100vh-50px)] w-full">
         <div class="absolute inset-0 bg-cover bg-center animate-fadeInBg"
              style="background-image: url('{{ asset('img/PP2.jpg') }}');">
@@ -91,7 +83,6 @@
                     </div>
                 </div>
             @empty
-
                 <div class="bg-white rounded-lg overflow-hidden flex flex-col items-center pt-8 shadow-xl opacity-0 animate-fadeSlideUp"
                      style="animation-delay: 0s; animation-fill-mode: forwards;
                             transition: transform 0.3s ease, box-shadow 0.3s ease;"
@@ -113,5 +104,4 @@
             @endforelse
         </div>
     </div>
-
 </x-layout>

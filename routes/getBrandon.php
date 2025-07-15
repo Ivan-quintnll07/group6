@@ -39,7 +39,8 @@ Route::get('/education', function () {
 
 Route::get('/principal', function () {
     return view('principal');
-})->middleware('guest')->name('principal');
+})->middleware('auth')->name('principal');
+
 
 Route::get('/addCard', function () {
     return view('cards/addCard', [
